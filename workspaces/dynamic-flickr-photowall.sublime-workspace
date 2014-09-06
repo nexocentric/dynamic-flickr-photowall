@@ -1,0 +1,1792 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"phot",
+				"photoFrameId"
+			],
+			[
+				"pho",
+				"photoFrameId"
+			],
+			[
+				"photo",
+				"photo-frame"
+			],
+			[
+				"time",
+				"timestampList"
+			],
+			[
+				"tim",
+				"timestampList"
+			],
+			[
+				"sh",
+				"shuffleArray"
+			],
+			[
+				"data",
+				"data-upload-timestamp"
+			],
+			[
+				"dat",
+				"data-upload-timestamp"
+			],
+			[
+				"display",
+				"displayList"
+			],
+			[
+				"del",
+				"deleteList"
+			],
+			[
+				"de",
+				"deleteList"
+			],
+			[
+				"fil",
+				"filteredList"
+			],
+			[
+				"fi",
+				"filteredList"
+			],
+			[
+				"for",
+				"for	for (…) {…}"
+			],
+			[
+				"new",
+				"newestFlickrPhotosTimestamps"
+			],
+			[
+				"up",
+				"getUploadTimestampsFromPhotoWall"
+			],
+			[
+				"fli",
+				"flickrKey"
+			],
+			[
+				"fl",
+				"flickrOptions"
+			],
+			[
+				"ad",
+				"ajaxHandlerPath"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"color",
+				"colorize-text"
+			],
+			[
+				"program",
+				"program_arguments"
+			],
+			[
+				"selec",
+				"selected_operation"
+			],
+			[
+				"colorize",
+				"colorize-text"
+			],
+			[
+				"form",
+				"formats"
+			],
+			[
+				"par",
+				"parsing_mode"
+			],
+			[
+				"esc",
+				"ESCAPE_SEQUENCE_START"
+			],
+			[
+				"ESC",
+				"ESCAPE_SEQUENCE_END"
+			],
+			[
+				"DE",
+				"DEFAULT_COLOR_CODE"
+			],
+			[
+				"ESCA",
+				"ESCAPE_SEQUENCE_START"
+			],
+			[
+				"re",
+				"red_admiral"
+			],
+			[
+				"DODGER",
+				"DARK_DODGER_BLUE"
+			],
+			[
+				"FRE",
+				"DARK_FREE_SPEECH_RED"
+			],
+			[
+				"clo",
+				"close_escape_sequence"
+			],
+			[
+				"escap",
+				"escaped_string"
+			],
+			[
+				"pare",
+				"parsed_formatting_codes"
+			],
+			[
+				"ope",
+				"open_escape_sequence"
+			],
+			[
+				"format",
+				"format_text"
+			],
+			[
+				"is",
+				"is_background_code"
+			],
+			[
+				"STA",
+				"ESCAPE_SEQUENCE_START"
+			],
+			[
+				"brea",
+				"break_string_into_parts"
+			],
+			[
+				"pa",
+				"parsed_formatting_codes"
+			],
+			[
+				"val",
+				"valid_formatting_codes"
+			],
+			[
+				"forma",
+				"formatting_codes"
+			],
+			[
+				"ES",
+				"ESCAPE_SEQUENCE_END"
+			],
+			[
+				"ext",
+				"extract_formatting_codes"
+			],
+			[
+				"string",
+				"string_to_format"
+			],
+			[
+				"sri",
+				"string_to_format"
+			],
+			[
+				"strin",
+				"string_to_format"
+			],
+			[
+				"es",
+				"escaped_string"
+			],
+			[
+				"ese",
+				"escape_sequence_present"
+			],
+			[
+				"str",
+				"string_to_format"
+			],
+			[
+				"colo",
+				"colorization_code_file"
+			],
+			[
+				"COL",
+				"COLORIZATION_CODE_FILE"
+			],
+			[
+				"create",
+				"create_shell_variable"
+			],
+			[
+				"ini",
+				"initalize"
+			],
+			[
+				"prog",
+				"program_configuration"
+			],
+			[
+				"sle",
+				"selected_instrument"
+			],
+			[
+				"instrument",
+				"instrument_to_run"
+			],
+			[
+				"import",
+				"importlib"
+			],
+			[
+				"instru",
+				"instrument_to_run"
+			],
+			[
+				"select",
+				"selected_instrument"
+			],
+			[
+				"if",
+				"if	If Condition"
+			],
+			[
+				"sele",
+				"selected_instrument"
+			],
+			[
+				"abbre",
+				"abbreviation"
+			],
+			[
+				"user_",
+				"user_generated_list"
+			],
+			[
+				"dis",
+				"display_prompt_and_return_user_input"
+			],
+			[
+				"elemen",
+				"element_count"
+			],
+			[
+				"user",
+				"user_generated_list"
+			],
+			[
+				"print",
+				"printTwoAgain"
+			],
+			[
+				"arg",
+				"arg2"
+			],
+			[
+				"sour",
+				"sourceFileData"
+			],
+			[
+				"myh",
+				"myHeight"
+			],
+			[
+				"my",
+				"myHair"
+			],
+			[
+				"myH",
+				"myHeight"
+			],
+			[
+				"car",
+				"cars_drive"
+			],
+			[
+				"scap",
+				"scampi"
+			],
+			[
+				"dar",
+				"dark-slate-blue"
+			],
+			[
+				"top",
+				"topbar-bg"
+			],
+			[
+				"as",
+				"astra"
+			],
+			[
+				"erro",
+				"error_log"
+			],
+			[
+				"err",
+				"error_log"
+			],
+			[
+				"style",
+				"stylesheets"
+			],
+			[
+				"tar",
+				"targetFolder"
+			],
+			[
+				"comp",
+				"compileCommand"
+			],
+			[
+				"base",
+				"basename"
+			],
+			[
+				"DEVE",
+				"DEVELOPMENT_MODE"
+			],
+			[
+				"get_cla",
+				"get_class_methods"
+			],
+			[
+				"site",
+				"siteName"
+			],
+			[
+				"url",
+				"urlToolkit"
+			],
+			[
+				"develop",
+				"developmentMode"
+			],
+			[
+				"render",
+				"renderTemplateFunction"
+			],
+			[
+				"file",
+				"fileName"
+			],
+			[
+				"tem",
+				"templateDirectory"
+			],
+			[
+				"temp",
+				"templateDirectory"
+			],
+			[
+				"templ",
+				"templateDirectory"
+			],
+			[
+				"preg",
+				"preg_match"
+			],
+			[
+				"star",
+				"startingPosition"
+			],
+			[
+				"text",
+				"textFile"
+			],
+			[
+				"tex",
+				"textFile"
+			],
+			[
+				"dire",
+				"directoryTree"
+			],
+			[
+				"compre",
+				"compressString"
+			],
+			[
+				"clas",
+				"className"
+			],
+			[
+				"Deve",
+				"developmentMode"
+			],
+			[
+				"strp",
+				"strpos"
+			],
+			[
+				"ob_e",
+				"ob_end_flush"
+			],
+			[
+				"devel",
+				"developmentMode"
+			],
+			[
+				"moni",
+				"monitorList"
+			],
+			[
+				"gz",
+				"gzdecode"
+			],
+			[
+				"dpe",
+				"dependencyList"
+			],
+			[
+				"ma",
+				"maxWidth"
+			],
+			[
+				"footer",
+				"footerList"
+			],
+			[
+				"foo",
+				"footerList"
+			],
+			[
+				"place",
+				"placeholderName"
+			],
+			[
+				"date_d",
+				"date_default_timezone_set"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"subTe",
+				"subTemplateList"
+			],
+			[
+				"plac",
+				"placeholderName"
+			],
+			[
+				"bo",
+				"boilerplateTemplatePath"
+			],
+			[
+				"str_re",
+				"str_replace"
+			],
+			[
+				"gener",
+				"generateUrlToolkit"
+			],
+			[
+				"web",
+				"webserverErrorCode"
+			],
+			[
+				"link",
+				"linkName"
+			],
+			[
+				"template",
+				"templateName"
+			],
+			[
+				"we",
+				"webserverErrorCode"
+			],
+			[
+				"error",
+				"error404"
+			],
+			[
+				"u",
+				"ul	Tag"
+			],
+			[
+				"lo",
+				"localizePage"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 81.0,
+		"selected_items":
+		[
+			[
+				"sysh",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"syshe",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"s",
+				"Set Syntax: Rainmeter"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"tab",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"tabs",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"sass",
+				"Set Syntax: Sass"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"lower",
+				"Convert Case: Lower Case"
+			],
+			[
+				"upp",
+				"Convert Case: Upper Case"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"php",
+				"Set Syntax: PHP"
+			],
+			[
+				"jav",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"sid",
+				"View: Toggle Side Bar"
+			],
+			[
+				"java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"javascript",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"htm",
+				"Set Syntax: HTML"
+			],
+			[
+				"",
+				"Convert Case: Lower Case"
+			],
+			[
+				"syvb",
+				"Set Syntax: VBScript"
+			],
+			[
+				"syv",
+				"Set Syntax: VBScript"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"synphp",
+				"Set Syntax: PHP"
+			],
+			[
+				"ynphp",
+				"Set Syntax: PHP"
+			],
+			[
+				"to",
+				"View: Toggle Tabs"
+			],
+			[
+				"sytph",
+				"Set Syntax: PHP"
+			],
+			[
+				"p",
+				"Package Control: Remove Package"
+			],
+			[
+				"subl",
+				"Preferences: SublimeLinter Settings – User"
+			],
+			[
+				"linter",
+				"Preferences: SublimeLinter Settings – User"
+			],
+			[
+				"sublime",
+				"Preferences: SublimeLinter Settings – User"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"brow",
+				"Preferences: Browse Packages"
+			],
+			[
+				"mark",
+				"Set Syntax: Markdown"
+			],
+			[
+				"ta",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"synj",
+				"Set Syntax: JSON"
+			],
+			[
+				"syntax m",
+				"Set Syntax: Markdown"
+			],
+			[
+				"tog",
+				"View: Toggle Side Bar"
+			],
+			[
+				"syna",
+				"Set Syntax: AutoHotkey"
+			],
+			[
+				"up",
+				"Convert Case: Upper Case"
+			],
+			[
+				"con",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"conver",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"tosid",
+				"View: Toggle Side Bar"
+			],
+			[
+				"synht",
+				"Set Syntax: HTML"
+			],
+			[
+				"syba",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"syphp",
+				"Set Syntax: PHP"
+			],
+			[
+				"synba",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"sy ba",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"snip",
+				"Snippet: if … fi"
+			],
+			[
+				"sy m",
+				"Set Syntax: Markdown"
+			],
+			[
+				"sy bas",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"snippet",
+				"Snippet: define(…, …)"
+			],
+			[
+				"snippet do",
+				"Snippet: Start Docblock"
+			],
+			[
+				"pacin",
+				"Package Control: Install Package"
+			],
+			[
+				"men",
+				"View: Toggle Menu"
+			],
+			[
+				"view",
+				"View: Toggle Menu"
+			],
+			[
+				"syn ph",
+				"Set Syntax: PHP"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"pack i",
+				"Package Control: Install Package"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Discover Packages"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 126.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Dropbox/flickr-wedding-app/app.html",
+		"/W/balinese-spa-frangipani/stylesheets/site.css",
+		"/C/cygwin64/development/silver-studded-blue/bash-colorization-tools.sh",
+		"/C/Dropbox/portable/applications/sublime/windows-64/Data/Packages/Emmet/Default (Windows).sublime-keymap",
+		"/W/hashmap.py",
+		"/W/vbinstrumentation/vbinstrumentation/USAGE",
+		"/W/vbinstrumentation/vbinstrumentation/EPILOG",
+		"/W/vbinstrumentation/vbinstrumentation/DESCRIPTION",
+		"/W/vbinstrumentation/vbinstrumentation/configuration.ini",
+		"/W/vbinstrumentation/vbinstrumentation/instrumentation/unittester.py",
+		"/W/vbinstrumentation/vbinstrumentation/instrumentation/sqlqueryanalyzer.py",
+		"/W/vbinstrumentation/vbinstrumentation/instrumentation/profiler.py",
+		"/W/vbinstrumentation/vbinstrumentation/instrumentation/logger.py",
+		"/W/vbinstrumentation/vbinstrumentation/instrumentation/instrument.py",
+		"/C/Dropbox/portable/applications/sublime/windows-64/Data/Packages/User/Default (Windows).sublime-keymap",
+		"/W/vb_external_instrumentation/README",
+		"/W/vb_external_instrumentation/setup.py",
+		"/W/vb_external_instrumentation/vb_external_instrumentation/tests/__init__.py",
+		"/W/vb_external_instrumentation/vb_external_instrumentation/vbexternalinstrumentation.py",
+		"/W/vb_external_instrumentation/vb_external_instrumentation/tests/test_main.py",
+		"/W/vb_external_instrumentation/vb_external_instrumentation/__init__.py",
+		"/W/arrowhead-blue/mint-bashrc-system",
+		"/W/arrowhead-blue/mint-bashrc",
+		"/W/arrowhead-blue/.bashrc",
+		"/W/arrowhead-blue/.bash_profile",
+		"/W/arrowhead-blue/.arrowhead-blue/terminus-settings",
+		"/W/python-tutorial-file.py",
+		"/W/vb_external_instrumentation/vb_external_instrumentation/main.py",
+		"/W/vb_external_instrumentation/vb_external_instrumentation/things.py",
+		"/W/vb-external-instrumentation/README",
+		"/W/vb-external-instrumentation/setup.py",
+		"/W/vb-external-instrumentation/vb-external-instrumentation/__init__.py",
+		"/W/vb-external-instrumentation/vb-external-instrumentation/main.py",
+		"/W/vb-external-instrumentation/vb-external-instrumentation/tests/test_main.py",
+		"/W/vb-external-instrumentation/tests/test_main.py",
+		"/W/vb-external-instrumentation/main.py",
+		"/W/python-tutorial-file.txt",
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/C/Dropbox/portable/applications/rainmeter/Skins/first/nex-first-skin.ini",
+		"/C/cygwin64/development/test-bash-script.sh",
+		"/C/Users/nexocentric/Desktop/sample.txt",
+		"/C/Users/nexocentric/Desktop/sample.html",
+		"/W/balinese-spa-frangipani/templates/stock-templates/showcase.tmpl",
+		"/W/balinese-spa-frangipani/templates/stock-templates/development-boilerplate.tmpl",
+		"/W/balinese-spa-frangipani/templates/stock-templates/logo.tmpl",
+		"/W/balinese-spa-frangipani/templates/stock-templates/header.tmpl",
+		"/W/balinese-spa-frangipani/templates/other-services.tmpl",
+		"/W/balinese-spa-frangipani/templates/main.tmpl",
+		"/W/balinese-spa-frangipani/templates/stock-templates/navigation-menu.tmpl",
+		"/W/balinese-spa-frangipani/site/new-customers.php",
+		"/W/balinese-spa-frangipani/templates/menu.tmpl",
+		"/W/balinese-spa-frangipani/libraries/nexocentric-studios/Site.php",
+		"/W/balinese-spa-frangipani/templates/stock-templates/subheader.tmpl",
+		"/W/balinese-spa-frangipani/templates/components/reservation-bar.tmpl",
+		"/W/balinese-spa-frangipani/templates/location.tmpl",
+		"/W/balinese-spa-frangipani/templates/balinese-massage.tmpl",
+		"/W/balinese-spa-frangipani/site/aroma-therapy.php",
+		"/W/balinese-spa-frangipani/templates/stock-templates/footer.tmpl",
+		"/W/balinese-spa-frangipani/scss/foundation/_settings.scss",
+		"/W/balinese-spa-frangipani/templates/therapists.tmpl",
+		"/W/balinese-spa-frangipani/libraries/nexocentric-studios/WebpageTemplate.php",
+		"/W/balinese-spa-frangipani/scss/normalize.scss",
+		"/W/balinese-spa-frangipani/javascripts/vendor/modernizr.js",
+		"/W/balinese-spa-frangipani/scss/foundation/_functions.scss",
+		"/W/balinese-spa-frangipani/templates/footer-templates/about.tmpl",
+		"/W/balinese-spa-frangipani/templates/footer-templates/sitemap.tmpl",
+		"/W/balinese-spa-frangipani/templates/footer-templates/privacy-policy.tmpl",
+		"/W/balinese-spa-frangipani/templates/footer-templates/news.tmpl",
+		"/W/balinese-spa-frangipani/templates/footer-templates/feedback.tmpl",
+		"/W/balinese-spa-frangipani/templates/footer-templates/contact.tmpl",
+		"/W/balinese-spa-frangipani/site/footer/about.php",
+		"/W/balinese-spa-frangipani/site/footer/sitemap.php",
+		"/W/balinese-spa-frangipani/site/footer/privacy-policy.php",
+		"/W/balinese-spa-frangipani/site/footer/news.php",
+		"/W/balinese-spa-frangipani/site/footer/feedback.php",
+		"/W/balinese-spa-frangipani/site/footer/contact.php",
+		"/W/balinese-spa-frangipani/site/other-services.php",
+		"/W/balinese-spa-frangipani/templates/massages.tmpl",
+		"/W/balinese-spa-frangipani/templates/products.tmpl",
+		"/W/balinese-spa-frangipani/templates/swedish-massage.tmpl",
+		"/W/balinese-spa-frangipani/templates/reservations.tmpl",
+		"/W/balinese-spa-frangipani/templates/treatments.tmpl",
+		"/W/balinese-spa-frangipani/templates/cream-bath.tmpl",
+		"/W/balinese-spa-frangipani/templates/facials.tmpl",
+		"/W/balinese-spa-frangipani/templates/hot-stone-massage.tmpl",
+		"/W/balinese-spa-frangipani/templates/showcase.tmpl",
+		"/W/balinese-spa-frangipani/site/cream-bath.php",
+		"/W/balinese-spa-frangipani/site/balinese-massage.php",
+		"/W/balinese-spa-frangipani/site/treatments.php",
+		"/W/balinese-spa-frangipani/site/therapists.php",
+		"/W/balinese-spa-frangipani/site/swedish-massage.php",
+		"/W/balinese-spa-frangipani/site/reservations.php",
+		"/W/balinese-spa-frangipani/site/reflexology.php",
+		"/W/balinese-spa-frangipani/site/products.php",
+		"/W/balinese-spa-frangipani/site/menu.php",
+		"/W/balinese-spa-frangipani/site/massages.php",
+		"/W/balinese-spa-frangipani/site/main2.php",
+		"/W/balinese-spa-frangipani/site/main3.php",
+		"/W/balinese-spa-frangipani/site/main.php",
+		"/W/balinese-spa-frangipani/site/location.php",
+		"/W/balinese-spa-frangipani/site/hot-stone-massage.php",
+		"/W/balinese-spa-frangipani/site/facials.php",
+		"/W/balinese-spa-frangipani/blog/wolf/app/main.php",
+		"/W/balinese-spa-frangipani/scss/site.scss",
+		"/W/balinese-spa-frangipani/templates/footer-templates/footer.tmpl",
+		"/W/balinese-spa-frangipani/templates/footer/footer.tmpl",
+		"/W/balinese-spa-frangipani/scss/nexocentric-studios/_color-pallet.scss",
+		"/W/balinese-spa-frangipani/scss/nexocentric-studios/_colors-by-name.scss",
+		"//ARCHANGEL/development/balinese-spa-frangipani/scss/foundation/components/_global.scss",
+		"/W/balinese-spa-frangipani/scss/nexocentric-studios/_custom-functions.scss",
+		"/W/balinese-spa-frangipani/libraries/nexocentric-studios/Utilities.php",
+		"/W/balinese-spa-frangipani/libraries/nexocentric-studios/AjaxHandler.php",
+		"/W/balinese-spa-frangipani/libraries/nexocentric-studios/Template.php",
+		"/W/balinese-spa-frangipani/templates/stock/development-boilerplate.tmpl",
+		"/C/Users/nexocentric/Desktop/bower-foundation-master/scss/foundation/_settings.scss",
+		"//ARCHANGEL/development/balinese-spa-frangipani/scss/foundation/_functions.scss",
+		"/W/balinese-spa-frangipani/scss/foundation.scss",
+		"//ARCHANGEL/development/balinese-spa-frangipani/scss/normalize.scss",
+		"//ARCHANGEL/development/balinese-spa-frangipani/scss/foundation/components/_grid.scss",
+		"//ARCHANGEL/development/balinese-spa-frangipani/scss/foundation/components/_accordion.scss",
+		"/W/balinese-spa-frangipani/libraries/nexocentric-studios/Webpage.php",
+		"/W/balinese-spa-frangipani/libraries/nexocentric-studios/DirectoryTree.php",
+		"/W/balinese-spa-frangipani/libraries/nexocentric-studios/HtmlInterface.php",
+		"/W/balinese-spa-frangipani/development-workspace/balinese-spa-frangipani.sublime-project",
+		"/W/balinese-spa-frangipani/templates/stock/logo.tmpl",
+		"/W/balinese-spa-frangipani/javascripts/nexocentric-studios/nexocentric-studios.js",
+		"/W/balinese-spa-frangipani/templates/development-boilerplate.tmpl",
+		"/W/balinese-spa-frangipani/templates/development-template.tmpl"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"W:\\balinese-spa-frangipani\\libraries",
+			"W:\\html-interface"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"exists",
+			"<span>",
+			"each",
+			"photoFrameId",
+			"||",
+			"!",
+			"[",
+			"ph",
+			"if (ph",
+			"<div",
+			"../",
+			"foundation/",
+			"deleteImage",
+			"timestampAttriute",
+			"'data-upload-timestamp'",
+			"alreadyDisplayed",
+			"filterPhotosForDisplay",
+			"||",
+			" (photoList[photoIndex].url_",
+			"getNewestFlickrTimestamps",
+			"addImage",
+			"compareNewestPhotoListToPhotoWall",
+			"newest-photos-wall",
+			" i",
+			"i ",
+			"var",
+			"):",
+			":",
+			"string_to_format",
+			"colorize_background",
+			"print(\"\", \"\")",
+			"def ",
+			"instrument_options",
+			"instruments",
+			"selected_instrument",
+			"\"1;2;4;5;7;8\"",
+			"red",
+			"holl",
+			"BACKGROUND_REGEX",
+			"FORMATS_REGEX",
+			"== None",
+			"none",
+			"None",
+			"none",
+			"None",
+			"foreground",
+			"text",
+			"test_code",
+			"test_string",
+			"RED_SYSTEM",
+			"_code_clean_",
+			"_clean_",
+			"de_part = test_code + ESCAPE_SEQUENCE_END",
+			"ending_co",
+			"FORMATTING_CODES",
+			"DEFAULT_COLOR_CODE",
+			"red_admiral.CO",
+			".get(",
+			"ESCAPE_SEQUENCE_END",
+			"assert()",
+			"red_admiral.insert_",
+			"DEFAULT_CLEAN_STRING",
+			":",
+			";",
+			"{0,2}",
+			"FORMATS_REGEX",
+			"formating",
+			"string_parts",
+			"text",
+			"string_parts = red_admiral.break_string_into_parts(test_string)",
+			",",
+			"None",
+			"string_parts",
+			"escaped_string",
+			"ESCAPE_SEQUENCE_END",
+			"E",
+			"ESCAPE_SEQUENCE_START",
+			"replace",
+			"FORMATTING_RESET_SEQUENCE",
+			"HIDDEN",
+			"\"super cali fragi listic expi ali docious\"",
+			"formatted_string",
+			"formatting_codes",
+			"parsed_formatting_codes",
+			"FOREGROUND_REGEX",
+			"text_regex",
+			" +",
+			"break_string_into_parts",
+			"insertFormattingCode",
+			"parsed_formatting_codes",
+			"formats",
+			"separate_codes_and_string",
+			";",
+			")\n{",
+			"{",
+			"open_escape_sequence",
+			"openEscapeSequence",
+			"escape_sequence_present",
+			"SHELL_QUOTE",
+			"-",
+			"red",
+			"TEXT_FORMAT_",
+			"TEXT_FORMAT_HIDDEN",
+			"WHITE_100",
+			"\"#",
+			"WHITE_100",
+			"[\\S_]+? = \\(",
+			"WHITE_100",
+			"\" \"",
+			"255",
+			"WHITE_100",
+			"eeeeee",
+			"\"#",
+			"WHITE_100",
+			"= \\([\\d]+",
+			"= \\([\\d]*",
+			" = ",
+			"ctrl\\+u",
+			"=",
+			"export ",
+			"informational_textfile",
+			" = ",
+			"instruments",
+			"instrument_to_run",
+			"instrument",
+			"module",
+			"SQL_ANALYZER_INSTRUMENT",
+			"database_"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"copyright",
+			"// Work     : (ml)Silkworm",
+			"'"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+								"php": "%DROPBOX_ROOT%/portable/applications/php/php.exe"
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": false,
+	"output.phpunit":
+	{
+		"height": 100.0
+	},
+	"replace":
+	{
+		"height": 81.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"pri",
+				"templates/footer-templates/privacy-policy.tmpl"
+			],
+			[
+				"foo",
+				"templates/stock-templates/footer.tmpl"
+			],
+			[
+				"main",
+				"templates/main.tmpl"
+			],
+			[
+				"pro",
+				"templates/products.tmpl"
+			],
+			[
+				"f",
+				"templates/facials.tmpl"
+			],
+			[
+				"pr",
+				"templates/products.tmpl"
+			],
+			[
+				"",
+				"templates/facials.tmpl"
+			],
+			[
+				"new",
+				"templates/new-customers.tmpl"
+			],
+			[
+				"crea",
+				"templates/cream-bath.tmpl"
+			],
+			[
+				"fa",
+				"templates/facials.tmpl"
+			],
+			[
+				"ho",
+				"templates/hot-stone-massage.tmpl"
+			],
+			[
+				"men",
+				"templates/menu.tmpl"
+			],
+			[
+				"menu",
+				"templates/stock-templates/navigation-menu.tmpl"
+			],
+			[
+				"he",
+				"templates/stock-templates/header.tmpl"
+			],
+			[
+				"set",
+				"scss/foundation/_settings.scss"
+			],
+			[
+				"site",
+				"scss/site.scss"
+			],
+			[
+				"si",
+				"libraries/nexocentric-studios/Site.php"
+			],
+			[
+				"cre",
+				"templates/cream-bath.tmpl"
+			],
+			[
+				"foot",
+				"templates/stock-templates/footer.tmpl"
+			],
+			[
+				"bal",
+				"templates/balinese-massage.tmpl"
+			],
+			[
+				"me",
+				"templates/menu.tmpl"
+			],
+			[
+				"bali",
+				"templates/balinese-massage.tmpl"
+			],
+			[
+				"the",
+				"templates/therapists.tmpl"
+			],
+			[
+				"show",
+				"templates/stock-templates/showcase.tmpl"
+			],
+			[
+				"ba",
+				"templates/balinese-massage.tmpl"
+			],
+			[
+				"hot",
+				"templates/hot-stone-massage.tmpl"
+			],
+			[
+				"ther",
+				"templates/therapists.tmpl"
+			],
+			[
+				"loc",
+				"templates/location.tmpl"
+			],
+			[
+				"na",
+				"templates/stock-templates/navigation-menu.tmpl"
+			],
+			[
+				"sho",
+				"templates/stock-templates/showcase.tmpl"
+			],
+			[
+				"sit",
+				"libraries/nexocentric-studios/Site.php"
+			],
+			[
+				"deve",
+				"templates/stock-templates/development-boilerplate.tmpl"
+			],
+			[
+				"nav",
+				"templates/stock-templates/navigation-menu.tmpl"
+			],
+			[
+				"templ",
+				"libraries/nexocentric-studios/Template.php"
+			],
+			[
+				"reser",
+				"templates/components/reservation-bar.tmpl"
+			],
+			[
+				"ar",
+				"templates/aroma-therapy.tmpl"
+			],
+			[
+				"mai",
+				"templates/main.tmpl"
+			],
+			[
+				"ma",
+				"templates/main.tmpl"
+			],
+			[
+				"rese",
+				"templates/components/reservation-bar.tmpl"
+			],
+			[
+				"sub",
+				"templates/stock-templates/subheader.tmpl"
+			],
+			[
+				"hea",
+				"templates/stock-templates/header.tmpl"
+			],
+			[
+				"res",
+				"templates/components/reservation-bar.tmpl"
+			],
+			[
+				"su",
+				"templates/stock-templates/subheader.tmpl"
+			],
+			[
+				"re",
+				"templates/components/reservation-bar.tmpl"
+			],
+			[
+				"lo",
+				"templates/stock-templates/logo.tmpl"
+			],
+			[
+				"log",
+				"templates/stock-templates/logo.tmpl"
+			],
+			[
+				"heade",
+				"templates/stock-templates/header.tmpl"
+			],
+			[
+				"head",
+				"templates/stock-templates/header.tmpl"
+			],
+			[
+				"uti",
+				"libraries/nexocentric-studios/Utilities.php"
+			],
+			[
+				"arom",
+				"templates/aroma-therapy.tmpl"
+			],
+			[
+				"n",
+				"templates/stock-templates/navigation-menu.tmpl"
+			],
+			[
+				"bar",
+				"templates/components/reservation-bar.tmpl"
+			],
+			[
+				"navi",
+				"templates/stock-templates/navigation-menu.tmpl"
+			],
+			[
+				"contac",
+				"templates/footer-templates/contact.tmpl"
+			],
+			[
+				"loca",
+				"templates/location.tmpl"
+			],
+			[
+				"p",
+				"templates/products.tmpl"
+			],
+			[
+				"a",
+				"templates/aroma-therapy.tmpl"
+			],
+			[
+				"aro",
+				"templates/aroma-therapy.tmpl"
+			],
+			[
+				"nex.j",
+				"javascripts/nexocentric-studios/nexocentric-studios.auto-reload.js"
+			],
+			[
+				"_sett",
+				"scss/foundation/_settings.scss"
+			],
+			[
+				"other",
+				"templates/other-services.tmpl"
+			],
+			[
+				"mass",
+				"templates/massages.tmpl"
+			],
+			[
+				"ref",
+				"templates/reflexology.tmpl"
+			],
+			[
+				"develo",
+				"templates/stock-templates/development-boilerplate.tmpl"
+			],
+			[
+				"_se",
+				"scss/foundation/_settings.scss"
+			],
+			[
+				"locat",
+				"templates/location.tmpl"
+			],
+			[
+				"no",
+				"scss/normalize.scss"
+			],
+			[
+				"moder",
+				"javascripts/vendor/modernizr.js"
+			],
+			[
+				"web",
+				"libraries/nexocentric-studios/WebpageTemplate.php"
+			],
+			[
+				"color",
+				"scss/nexocentric-studios/_colors-by-name.scss"
+			],
+			[
+				"s",
+				"scss/site.scss"
+			],
+			[
+				"_fun",
+				"scss/foundation/_functions.scss"
+			],
+			[
+				"main.php",
+				"blog/wolf/app/main.php"
+			],
+			[
+				"settinsc",
+				"scss/foundation/_settings.scss"
+			],
+			[
+				"scss",
+				"scss/site.scss"
+			],
+			[
+				"temp",
+				"libraries/nexocentric-studios/Template.php"
+			],
+			[
+				"fun",
+				"scss/foundation/_functions.scss"
+			],
+			[
+				"col",
+				"scss/nexocentric-studios/_color-pallet.scss"
+			],
+			[
+				"colo",
+				"scss/nexocentric-studios/_colors-by-name.scss"
+			],
+			[
+				"aja",
+				"libraries/nexocentric-studios/AjaxHandler.php"
+			],
+			[
+				".scs",
+				"scss/site.scss"
+			],
+			[
+				"site.ph",
+				"libraries/nexocentric-studios/Site.php"
+			],
+			[
+				"webp",
+				"libraries/nexocentric-studios/Webpage.php"
+			],
+			[
+				"utili",
+				"libraries/nexocentric-studios/Utilities.php"
+			],
+			[
+				"wetemp",
+				"libraries/nexocentric-studios/WebpageTemplate.php"
+			],
+			[
+				"dire",
+				"libraries/nexocentric-studios/DirectoryTree.php"
+			],
+			[
+				".scss",
+				"scss/site.scss"
+			],
+			[
+				"we",
+				"libraries/nexocentric-studios/WebpageTemplate.php"
+			],
+			[
+				"devebr",
+				"templates/development-boilerplate.tmpl"
+			],
+			[
+				"devel",
+				"templates/development-template.tmpl"
+			],
+			[
+				"nexo",
+				"javascripts/nexocentric-studios/nexocentric-studios.js"
+			],
+			[
+				"aut.j",
+				"javascripts/nexocentric-studios/nexocentric-studios.auto-reload.js"
+			],
+			[
+				"te",
+				"nexocentric-studios-broilerplate/libraries/nexocentric-studios/Template.php"
+			],
+			[
+				"gi",
+				"nexocentric-studios-broilerplate/.gitignore"
+			],
+			[
+				"produc",
+				"nexocentric-studios-broilerplate/templates/production-error-boilerplate.tmpl"
+			],
+			[
+				"e",
+				"nexocentric-studios-broilerplate/templates/error-boilerplate.tmpl"
+			],
+			[
+				"erro",
+				"nexocentric-studios-broilerplate/scss/error.scss"
+			],
+			[
+				"30",
+				"nexocentric-studios-broilerplate/templates/301.tmpl"
+			],
+			[
+				"sql",
+				"nexocentric-studios-broilerplate/libraries/nexocentric-studios/SqlInterface.php"
+			],
+			[
+				"prod",
+				"nexocentric-studios-broilerplate/templates/production-boilerplate.tmpl"
+			],
+			[
+				"ap",
+				"nexocentric-studios-broilerplate/scss/app.scss"
+			],
+			[
+				"foundation.css",
+				"nexocentric-studios-broilerplate/stylesheets/foundation/foundation.css"
+			],
+			[
+				"app",
+				"nexocentric-studios-broilerplate/scss/app.scss"
+			],
+			[
+				"_",
+				"nexocentric-studios-broilerplate/scss/_settings.scss"
+			],
+			[
+				".tmpl",
+				"nexocentric-studios-broilerplate/templates/main.tmpl"
+			],
+			[
+				"html",
+				"nexocentric-studios-broilerplate/libraries/nexocentric-studios/HtmlInterface.php"
+			],
+			[
+				"ui",
+				"nexocentric-studios-broilerplate/libraries/nexocentric-studios/Utilities.php"
+			],
+			[
+				"server",
+				"nexocentric-studios-broilerplate/php-packages-used-on-my-server.txt"
+			],
+			[
+				"maint",
+				"nexocentric-studios-broilerplate/templates/main.tmpl"
+			],
+			[
+				"git",
+				"nexocentric-studios-broilerplate/.gitignore"
+			],
+			[
+				"php",
+				"nexocentric-studios-broilerplate/php-packages-used-on-my-server.txt"
+			],
+			[
+				"404",
+				"nexocentric-studios-broilerplate/templates/404.tmpl"
+			],
+			[
+				"main.pp",
+				"nexocentric-studios-broilerplate/site/main.php"
+			],
+			[
+				"main.tm",
+				"nexocentric-studios-broilerplate/templates/main.tmpl"
+			],
+			[
+				"zh",
+				"nexocentric-studios-broilerplate/lorem-ipsum/zh"
+			],
+			[
+				"main.t",
+				"nexocentric-studios-broilerplate/templates/main.tmpl"
+			],
+			[
+				"nexoc.js",
+				"nexocentric-studios-broilerplate/javascripts/nexocentric-studios/nexocentric-studios.js"
+			],
+			[
+				"autorelo",
+				"nexocentric-studios-broilerplate/javascripts/nexocentric-studios/nexocentric-studios.auto-reload.js"
+			],
+			[
+				"nexocentric-studios.j",
+				"nexocentric-studios-broilerplate/javascripts/nexocentric-studios/nexocentric-studios.js"
+			],
+			[
+				"de",
+				"nexocentric-studios-broilerplate/templates/development-boilerplate.tmpl"
+			],
+			[
+				"rel",
+				"nexocentric-studios-broilerplate/templates/auto-reload.tmpl"
+			],
+			[
+				"relo.",
+				"nexocentric-studios-broilerplate/templates/auto-reload.tmpl"
+			],
+			[
+				"nex",
+				"nexocentric-studios-broilerplate/javascripts/nexocentric-studios/nexocentric-studios.localization.js"
+			],
+			[
+				"auto",
+				"nexocentric-studios-broilerplate/templates/auto-reload.tmpl"
+			],
+			[
+				"au",
+				"nexocentric-studios-broilerplate/javascripts/nexocentric-studios/nexocentric-studios.auto-reload.js"
+			],
+			[
+				"g",
+				"nexocentric-studios-broilerplate/javascripts/general/gunzip.min.js"
+			],
+			[
+				"ajp",
+				"nexocentric-studios-broilerplate/libraries/nexocentric-studios/AjaxHandler.php"
+			],
+			[
+				"nexocentric-studios.",
+				"nexocentric-studios-broilerplate/javascripts/nexocentric-studios/nexocentric-studios.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true
+}
