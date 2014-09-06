@@ -34,7 +34,8 @@ var samplePhotoList2 = {
 			{ "id": "8", "owner": "42488861@N06", "secret": "3be0dd6206", "server": "2920", "farm": 3, "title": "IMG_1004", "ispublic": 1, "isfriend": 0, "isfamily": 0, "dateupload": "1404060190", "lastupdate": "1410019762", "datetaken": "2014-06-08 13:28:52", "datetakengranularity": 0, "ownername": "nexocentric", "iconserver": "2630", "iconfarm": 3, "views": 15, "tags": "", "machine_tags": "", "latitude": 0, "longitude": 0, "accuracy": 0, "context": 0, "media": "photo", "media_status": "ready", "url_sq": "https:\/\/farm3.staticflickr.com\/2920\/14554998823_3be0dd6206_s.jpg", "height_sq": 75, "width_sq": 75, "url_t": "https:\/\/farm3.staticflickr.com\/2920\/14554998823_3be0dd6206_t.jpg", "height_t": 75, "width_t": 100, "url_s": "https:\/\/farm3.staticflickr.com\/2920\/14554998823_3be0dd6206_m.jpg", "height_s": "180", "width_s": "240", "url_q": "https:\/\/farm3.staticflickr.com\/2920\/14554998823_3be0dd6206_q.jpg", "height_q": "150", "width_q": "150", "url_m": "https:\/\/farm3.staticflickr.com\/2920\/14554998823_3be0dd6206.jpg", "height_m": "375", "width_m": "500", "url_n": "https:\/\/farm3.staticflickr.com\/2920\/14554998823_3be0dd6206_n.jpg", "height_n": "240", "width_n": "320", "url_z": "https:\/\/farm3.staticflickr.com\/2920\/14554998823_3be0dd6206_z.jpg", "height_z": "480", "width_z": "640", "url_c": "https:\/\/farm3.staticflickr.com\/2920\/14554998823_3be0dd6206_c.jpg", "height_c": "600", "width_c": "800", "url_l": "https:\/\/farm3.staticflickr.com\/2920\/14554998823_3be0dd6206_b.jpg", "height_l": "768", "width_l": "1024", "pathalias": "nexocentric" },
 			{ "id": "9", "owner": "42488861@N06", "secret": "4a8857f919", "server": "8508", "farm": 9, "title": "IMG_0085.JPG", "ispublic": 1, "isfriend": 0, "isfamily": 0, "dateupload": "1364558364", "lastupdate": "1364558369", "datetaken": "2013-03-29 15:28:12", "datetakengranularity": 0, "ownername": "nexocentric", "iconserver": "2630", "iconfarm": 3, "views": 18, "tags": "eyefi", "machine_tags": "", "latitude": 0, "longitude": 0, "accuracy": 0, "context": 0, "media": "photo", "media_status": "ready", "url_sq": "https:\/\/farm9.staticflickr.com\/8508\/8600406492_4a8857f919_s.jpg", "height_sq": 75, "width_sq": 75, "url_t": "https:\/\/farm9.staticflickr.com\/8508\/8600406492_4a8857f919_t.jpg", "height_t": 75, "width_t": 100, "url_s": "https:\/\/farm9.staticflickr.com\/8508\/8600406492_4a8857f919_m.jpg", "height_s": "180", "width_s": "240", "url_q": "https:\/\/farm9.staticflickr.com\/8508\/8600406492_4a8857f919_q.jpg", "height_q": "150", "width_q": "150", "url_m": "https:\/\/farm9.staticflickr.com\/8508\/8600406492_4a8857f919.jpg", "height_m": "375", "width_m": "500", "url_n": "https:\/\/farm9.staticflickr.com\/8508\/8600406492_4a8857f919_n.jpg", "height_n": "240", "width_n": "320", "url_z": "https:\/\/farm9.staticflickr.com\/8508\/8600406492_4a8857f919_z.jpg", "height_z": "480", "width_z": "640", "url_c": "https:\/\/farm9.staticflickr.com\/8508\/8600406492_4a8857f919_c.jpg", "height_c": "600", "width_c": "800", "url_l": "https:\/\/farm9.staticflickr.com\/8508\/8600406492_4a8857f919_b.jpg", "height_l": "768", "width_l": "1024", "pathalias": "nexocentric" },
 			{ "id": "10", "owner": "42488861@N06", "secret": "4950c038e0", "server": "8387", "farm": 9, "title": "IMG_0084.JPG", "ispublic": 1, "isfriend": 0, "isfamily": 0, "dateupload": "1364558354", "lastupdate": "1364558359", "datetaken": "2013-03-29 15:28:11", "datetakengranularity": 0, "ownername": "nexocentric", "iconserver": "2630", "iconfarm": 3, "views": 19, "tags": "eyefi", "machine_tags": "", "latitude": 0, "longitude": 0, "accuracy": 0, "context": 0, "media": "photo", "media_status": "ready", "url_sq": "https:\/\/farm9.staticflickr.com\/8387\/8600406238_4950c038e0_s.jpg", "height_sq": 75, "width_sq": 75, "url_t": "https:\/\/farm9.staticflickr.com\/8387\/8600406238_4950c038e0_t.jpg", "height_t": 75, "width_t": 100, "url_s": "https:\/\/farm9.staticflickr.com\/8387\/8600406238_4950c038e0_m.jpg", "height_s": "180", "width_s": "240", "url_q": "https:\/\/farm9.staticflickr.com\/8387\/8600406238_4950c038e0_q.jpg", "height_q": "150", "width_q": "150", "url_m": "https:\/\/farm9.staticflickr.com\/8387\/8600406238_4950c038e0.jpg", "height_m": "375", "width_m": "500", "url_n": "https:\/\/farm9.staticflickr.com\/8387\/8600406238_4950c038e0_n.jpg", "height_n": "240", "width_n": "320", "url_z": "https:\/\/farm9.staticflickr.com\/8387\/8600406238_4950c038e0_z.jpg", "height_z": "480", "width_z": "640", "url_c": "https:\/\/farm9.staticflickr.com\/8387\/8600406238_4950c038e0_c.jpg", "height_c": "600", "width_c": "800", "url_l": "https:\/\/farm9.staticflickr.com\/8387\/8600406238_4950c038e0_b.jpg", "height_l": "768", "width_l": "1024", "pathalias": "nexocentric" }
-		] }, "stat": "ok" 
+		] }, 
+	"stat": "ok" 
 };
 
 
@@ -54,5 +55,18 @@ QUnit.test("toggleFunctionTimeout function", function(assert) {
 
 QUnit.test("parseFlickrPhotoList function", function(assert) {
 	var returnValue = parseFlickrPhotoList(samplePhotoList1);
-	assert.deepEqual(returnValue, true, 'updates photo grid');
+	assert.deepEqual(returnValue, true, 'initializes photowall when no photos loaded');
+
+	// returnValue = parseFlickrPhotoList(samplePhotoList1);
+	// assert.deepEqual(returnValue.length, 0, 'stops processing if no changes detected between flickr and photowall');	
+});
+
+QUnit.test("getFrameCount function", function(assert) {
+	var returnValue = getFrameCount(true);
+	assert.deepEqual(returnValue, 5, 'detects number of empty frames on photowall');
+
+	$('#dynamic-photo-wall').append('<li><div id="frame5" class="photo-frame"><img class="image-for-test"></div></li>');
+	returnValue = getFrameCount();
+	assert.deepEqual(returnValue, 1, 'detects number of filled frames on photowall');
+	$('.element-for-test').remove();
 });

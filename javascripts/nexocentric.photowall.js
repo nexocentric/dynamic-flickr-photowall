@@ -121,6 +121,84 @@ function shuffleArray(o){ //v1.0
 // [parameters]
 // [return]
 //---------------------------------------------------------
+function photosDisplayedOnPhotowall() {
+	//--------------------------------------
+	// initalizatinos
+	//--------------------------------------
+	var photoCount = $('.photo-frame > img').length;
+
+	//--------------------------------------
+	// check status
+	//--------------------------------------
+	if (photoCount == 0) {
+		console.log('No photos are currently displayed on the photowall.');
+		return false;
+	}
+
+	//--------------------------------------
+	// photos exist
+	//--------------------------------------
+	console.log('[' + photoCount + '] photo(s) currently displayed on the photowall.');
+	return true;
+}
+
+function compareFlickrPhotoListToPhotowall(flickrJsonResponse) {
+	//--------------------------------------
+	// safety check
+	//--------------------------------------
+	photoList = json.photos.photo;
+
+	var photosDisplayed = $('.photo-frame > img').length;
+	
+	newestFlickrPhotosTimestamps = getNewestFlickrTimestamps(photoList);
+	photoWallTimestamps = getUploadTimestampsFromPhotoWall();
+
+
+	displayList = newestFlickrPhotosTimestamps.diff(photoWallTimestamps);
+	deleteList = photoWallTimestamps.diff(newestFlickrPhotosTimestamps);
+
+	if (photosDisplayed > 0 && deleteList.length == 0) {
+		console.log('No new photos to display.');
+		return deleteList;
+	}
+}
+
+//---------------------------------------------------------
+// [author]
+// [summary]
+// [parameters]
+// [return]
+//---------------------------------------------------------
+function getFrameCount(countEmptyFrames) {
+	//--------------------------------------
+	// optional parameter handling
+	//--------------------------------------
+	if (typeof countEmptyFrames === typeUndefined) {
+		countEmptyFrames = false;
+	}
+
+	//--------------------------------------
+	// initializations
+	//--------------------------------------
+	var frameType = 'img';
+	var photoFrameCount = 0;
+
+	// by default count full (img) frames unless specified
+	if (countEmptyFrames) {
+		frameType = 'span'; //span types are empty frames
+	}
+
+	// completed count by type
+	return $('.photo-frame > ' + frameType).length;
+
+}
+
+//---------------------------------------------------------
+// [author]
+// [summary]
+// [parameters]
+// [return]
+//---------------------------------------------------------
 function parseFlickrPhotoList(json) {
 	//--------------------------------------
 	// safety check
@@ -144,7 +222,6 @@ function parseFlickrPhotoList(json) {
 		console.log('No new photos to display.');
 		return deleteList;
 	}
-
 
 	console.log('display list:' + displayList);
 	console.log('list of photos to delete:' + deleteList);
