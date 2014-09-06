@@ -61,12 +61,12 @@ QUnit.test("parseFlickrPhotoList function", function(assert) {
 	// assert.deepEqual(returnValue.length, 0, 'stops processing if no changes detected between flickr and photowall');	
 });
 
-QUnit.test("getFrameCount function", function(assert) {
-	var returnValue = getFrameCount(true);
+QUnit.test("countPhotoFrames function", function(assert) {
+	var returnValue = countPhotoFrames(true);
 	assert.deepEqual(returnValue, 5, 'detects number of empty frames on photowall');
 
 	$('#dynamic-photo-wall').append('<li><div id="frame5" class="photo-frame"><img class="image-for-test"></div></li>');
-	returnValue = getFrameCount();
+	returnValue = countPhotoFrames();
 	assert.deepEqual(returnValue, 1, 'detects number of filled frames on photowall');
 	$('.element-for-test').remove();
 });

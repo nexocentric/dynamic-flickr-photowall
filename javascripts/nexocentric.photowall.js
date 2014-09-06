@@ -169,7 +169,7 @@ function compareFlickrPhotoListToPhotowall(flickrJsonResponse) {
 // [parameters]
 // [return]
 //---------------------------------------------------------
-function getFrameCount(countEmptyFrames) {
+function countPhotoFrames(countEmptyFrames) {
 	//--------------------------------------
 	// optional parameter handling
 	//--------------------------------------
@@ -205,7 +205,7 @@ function parseFlickrPhotoList(json) {
 	//--------------------------------------
 	photoList = json.photos.photo;
 	console.log(photoList);
-	var photosDisplayed = $('.photo-frame > img').length;
+	var photosDisplayed = countPhotoFrames();
 
 	if (photosDisplayed == 0) {
 		photoList = shuffleArray(photoList);	
@@ -230,7 +230,7 @@ function parseFlickrPhotoList(json) {
 		deleteImage(deleteList[photoIndex]);
 	};
 
-	availablePhotoFrames = $('.photo-frame > span');
+	availablePhotoFrames = countPhotoFrames(true);
 
 	var photoIndex = 0;
 	var upperLimit = $(availablePhotoFrames).length;
