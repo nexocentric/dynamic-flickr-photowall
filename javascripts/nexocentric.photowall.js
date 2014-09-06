@@ -9,6 +9,8 @@ var ajaxTimeout = 300000;
 var flickrOptions = "";
 var displayPhotos = "";
 var maxDisplayNumber = 12;
+var emptyPhotoFrameSelector = '.photo-frame > span';
+var filledPhotoFrameSelector = '.photo-frame > img';
 var getMaxFromFlickr = maxDisplayNumber;
 var flickrPollingInterval = 5000;
 var pollFlickrServerFunctionTimeoutHandle = null;
@@ -115,31 +117,8 @@ function shuffleArray(o){ //v1.0
 	return o;
 };
 
-//---------------------------------------------------------
-// [author]
-// [summary]
-// [parameters]
-// [return]
-//---------------------------------------------------------
-function photosDisplayedOnPhotowall() {
-	//--------------------------------------
-	// initalizatinos
-	//--------------------------------------
-	var photoCount = $('.photo-frame > img').length;
-
-	//--------------------------------------
-	// check status
-	//--------------------------------------
-	if (photoCount == 0) {
-		console.log('No photos are currently displayed on the photowall.');
-		return false;
-	}
-
-	//--------------------------------------
-	// photos exist
-	//--------------------------------------
-	console.log('[' + photoCount + '] photo(s) currently displayed on the photowall.');
-	return true;
+function selectEmptyPhotoFrames() {
+	return $('.photo-frame > span');
 }
 
 function compareFlickrPhotoListToPhotowall(flickrJsonResponse) {
@@ -180,16 +159,16 @@ function countPhotoFrames(countEmptyFrames) {
 	//--------------------------------------
 	// initializations
 	//--------------------------------------
-	var frameType = 'img';
+	var frameSelector = filledPhotoFrameSelector;
 	var photoFrameCount = 0;
 
 	// by default count full (img) frames unless specified
 	if (countEmptyFrames) {
-		frameType = 'span'; //span types are empty frames
+		frameSelector = emptyPhotoFrameSelector;
 	}
 
 	// completed count by type
-	return $('.photo-frame > ' + frameType).length;
+	return $(frameSelector).length;
 
 }
 
@@ -205,51 +184,46 @@ function parseFlickrPhotoList(json) {
 	//--------------------------------------
 	photoList = json.photos.photo;
 	console.log(photoList);
-	var photosDisplayed = countPhotoFrames();
+	var filledPhotoFrameCount = countPhotoFrames();
+	var photoIndex = 0;
 
-	if (photosDisplayed == 0) {
+	if (filledPhotoFrameCount == 0) {
 		photoList = shuffleArray(photoList);	
 	};
 	
 	newestFlickrPhotosTimestamps = getNewestFlickrTimestamps(photoList);
 	photoWallTimestamps = getUploadTimestampsFromPhotoWall();
 
-
 	displayList = newestFlickrPhotosTimestamps.diff(photoWallTimestamps);
 	deleteList = photoWallTimestamps.diff(newestFlickrPhotosTimestamps);
 
-	if (photosDisplayed > 0 && deleteList.length == 0) {
+	if (filledPhotoFrameCount > 0 && deleteList.length == 0) {
 		console.log('No new photos to display.');
-		return deleteList;
+		return [];
 	}
 
 	console.log('display list:' + displayList);
 	console.log('list of photos to delete:' + deleteList);
 
-	for (var photoIndex = 0; photoIndex < deleteList.length; photoIndex++) {
+	for (photoIndex = 0; photoIndex < deleteList.length; photoIndex++) {
 		deleteImage(deleteList[photoIndex]);
 	};
 
-	availablePhotoFrames = countPhotoFrames(true);
-
-	var photoIndex = 0;
-	var upperLimit = $(availablePhotoFrames).length;
-	if (upperLimit > 0) {
-		upperLimit = upperLimit;
-	}
-	displayList = displayList.slice(0, upperLimit);
-	for (var photoIndex = 0; photoIndex < displayList.length; photoIndex++) {
+	emptyPhotoFrameCount = countPhotoFrames(true);
+	var emptyPhotoFramesJqueryObject = selectEmptyPhotoFrames();
+	displayList = displayList.slice(0, emptyPhotoFrameCount);
+	for (photoIndex = 0; photoIndex < displayList.length; photoIndex++) {
 		if (alreadyDisplayed(photoList[photoIndex].dateupload, deleteList)) {
 			console.log('picture skipped');
 			continue;
 		}
 
 		if (photoList[photoIndex].url_b) {
-			addImage(photoList[photoIndex].url_b, photoList[photoIndex].dateupload, availablePhotoFrames[photoIndex]);
+			addImage(photoList[photoIndex].url_b, photoList[photoIndex].dateupload, emptyPhotoFramesJqueryObject[photoIndex]);
 		} else if (photoList[photoIndex].url_c) {
-			addImage(photoList[photoIndex].url_c, photoList[photoIndex].dateupload, availablePhotoFrames[photoIndex]);
+			addImage(photoList[photoIndex].url_c, photoList[photoIndex].dateupload, emptyPhotoFramesJqueryObject[photoIndex]);
 		} else if (photoList[photoIndex].url_z) {
-			addImage(photoList[photoIndex].url_z, photoList[photoIndex].dateupload, availablePhotoFrames[photoIndex]);
+			addImage(photoList[photoIndex].url_z, photoList[photoIndex].dateupload, emptyPhotoFramesJqueryObject[photoIndex]);
 		}
 	}
 	return true;
