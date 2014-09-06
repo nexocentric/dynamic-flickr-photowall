@@ -175,6 +175,7 @@ function parseFlickrPhotoList(json) {
 			addImage(photoList[photoIndex].url_z, photoList[photoIndex].dateupload, availablePhotoFrames[photoIndex]);
 		}
 	}
+	return true;
 }
 
 //---------------------------------------------------------

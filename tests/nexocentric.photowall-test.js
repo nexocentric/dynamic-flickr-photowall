@@ -38,21 +38,21 @@ var samplePhotoList2 = {
 };
 
 
-QUnit.test("toogleTimeout function", function(assert) {
-	var returnValue = toggleTimeout();
+QUnit.test("toggleFunctionTimeout function", function(assert) {
+	var returnValue = toggleFunctionTimeout();
 	assert.deepEqual(returnValue, false, 'no parameters specified');
 
-	returnValue = toggleTimeout(Math.random);
+	returnValue = toggleFunctionTimeout(Math.random);
 	assert.deepEqual(returnValue, false, 'function specified without timeout interval');
 
-	returnValue = toggleTimeout(Math.random, 700000);
+	returnValue = toggleFunctionTimeout(Math.random, 700000);
 	assert.ok(typeof returnValue === typeNumber, 'function did not return handle for timeout');
 
-	returnValue = toggleTimeout(returnValue);
+	returnValue = toggleFunctionTimeout(returnValue);
 	assert.deepEqual(returnValue, true, 'failed to cancel timeout');
 });
 
 QUnit.test("parseFlickrPhotoList function", function(assert) {
 	var returnValue = parseFlickrPhotoList(samplePhotoList1);
-	assert.deepEqual(returnValue, false, 'no parameters specified');
+	assert.deepEqual(returnValue, true, 'updates photo grid');
 });
