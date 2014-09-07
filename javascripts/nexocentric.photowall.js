@@ -11,6 +11,7 @@ var displayPhotos = "";
 var maxDisplayNumber = 12;
 var emptyPhotoFrameSelector = '.photo-frame > span';
 var filledPhotoFrameSelector = '.photo-frame > img';
+var photoSelector = '.photo';
 var getMaxFromFlickr = maxDisplayNumber;
 var flickrPollingInterval = 5000;
 var pollFlickrServerFunctionTimeoutHandle = null;
@@ -19,6 +20,7 @@ var typeUndefined = 'undefined';
 var typeNumber = 'number';
 var typeObject = 'object';
 var SELECTED_PHOTO_SIZES = ['b', 'c', 'z'];
+var FLICKR_USER_ID_FOR_SEARCH = '42488861@N06';
 
 //---------------------------------------------------------
 // [author]
@@ -131,7 +133,7 @@ function fetchTimestampsFromFlickrList(photoList, selectedPhotoSizes, maxPhotoCo
 function fetchTimestampsFromPhotowall() {
 	var timestampList = new Array();
 
-	$('.photo').each(function() {
+	$(photoSelector).each(function() {
 		timestampList.push($(this).attr(timestampAttribute));
 		console.log('currently displayed:' + $(this).attr(timestampAttribute));
 	});
@@ -385,9 +387,16 @@ function parseFlickrPhotoList(json) {
 // A wrapper function for the javascript functions
 // setTimeout and clearTimeout. 
 // [parameters]
+// 1) a function to call when the timeout ends 
+//    or the handle of the timeout to cancel
+// 2) the interval to wait before calling the function
+//    [not needed if cancelling] in mileseconds
 // [return]
+// 1) the id handle for the timeout on successful que
+// 2) true if the timeout has been cancelled from the que
+// 3) false on parameter error
 //---------------------------------------------------------
-function toggleFunctionTimeout(functionHandle, pollingInterval) {
+function toggleFunctionTimeout(functionHandle, waitInterval) {
 	//--------------------------------------
 	// safety check
 	//--------------------------------------
@@ -405,13 +414,13 @@ function toggleFunctionTimeout(functionHandle, pollingInterval) {
 		// make sure a timeout was specified
 		// otherwise cancel and warn developer
 		//--------------------------------------
-		if (typeof pollingInterval === typeUndefined) {
+		if (typeof waitInterval === typeUndefined) {
 			console.log('You must specify a timeout interval in milliseconds.');
 			return false;
 		}
 		//set the timeout and return timeout id
-		console.log('[' + pollingInterval + '] millisecond timeout set for [' + functionHandle.toString() + '] function.');
-		return window.setTimeout(functionHandle, pollingInterval);
+		console.log('[' + waitInterval + '] millisecond timeout set for [' + functionHandle.toString() + '] function.');
+		return window.setTimeout(functionHandle, waitInterval);
 	}
 
 	//cleat the timeout and notify the developer
@@ -424,8 +433,12 @@ function toggleFunctionTimeout(functionHandle, pollingInterval) {
 // [author]
 // Dodzi Y. Dzakuma
 // [summary]
+// This checks the Flickr server for photo updates. This 
+// function calls parseFlickrPhotoList to parse the list.
 // [parameters]
+// none
 // [return]
+// none
 //---------------------------------------------------------
 function pollFlickrServer() {
 	//----------------------------------
@@ -441,7 +454,7 @@ function pollFlickrServer() {
 			privacy_filter: 1,
 			content_type: 1,
 			per_page: getMaxFromFlickr,
-			user_id: '42488861@N06',
+			user_id: FLICKR_USER_ID_FOR_SEARCH,
 			extras: 'date_upload,url_b,url_c,url_z,url_n'
 		},
 		success: parseFlickrPhotoList,
