@@ -227,70 +227,39 @@ function getPhotoDimensions(photoObject, photoUrl) {
 	//--------------------------------------
 	// initializations
 	//--------------------------------------
+	var photoExtension = '.jpg';
+	var photoSizeSuffixSeparator = '_';
+	var photoSizeSearchSuffix = '';
+	var photoSizeDesignator = '';
+	var widthProperty = '';
+	var heightProperty = '';
 	var photoWidth = 0;
 	var photoHeight = 0;
 
 	//--------------------------------------
-	// these are all sizes as specified by
-	// the Flickr documents for their photo
-	// search function on their website
+	// loop through a list of possible
+	// urls to make sure that the size we
+	// want has an available link for use
 	//--------------------------------------
-	if (
-		photoUrl.indexOf('_o.jpg') != INDEX_NOT_FOUND
-	) {
-		photoWidth = photoObject.width_o;
-		photoHeight = photoObject.height_o;
-	} else if (
-		photoUrl.indexOf('_l.jpg') != INDEX_NOT_FOUND
-	) {
-		photoWidth = photoObject.width_l;
-		photoHeight = photoObject.height_l;
-	} else if (
-		photoUrl.indexOf('_b.jpg') != INDEX_NOT_FOUND
-	) {
-		photoWidth = photoObject.width_b;
-		photoHeight = photoObject.height_b;
-	} else if (
-		photoUrl.indexOf('_c.jpg') != INDEX_NOT_FOUND
-	) {
-		photoWidth = photoObject.width_c;
-		photoHeight = photoObject.height_c;
-	} else if (
-		photoUrl.indexOf('_z.jpg') != INDEX_NOT_FOUND
-	) {
-		photoWidth = photoObject.width_z;
-		photoHeight = photoObject.height_z;
-	} else if (
-		photoUrl.indexOf('_n.jpg') != INDEX_NOT_FOUND
-	) {
-		photoWidth = photoObject.width_n;
-		photoHeight = photoObject.height_n;
-	} else if (
-		photoUrl.indexOf('_m.jpg') != INDEX_NOT_FOUND
-	) {
-		photoWidth = photoObject.width_m;
-		photoHeight = photoObject.height_m;
-	} else if (
-		photoUrl.indexOf('_q.jpg') != INDEX_NOT_FOUND
-	) {
-		photoWidth = photoObject.width_q;
-		photoHeight = photoObject.height_q;
-	} else if (
-		photoUrl.indexOf('_s.jpg') != INDEX_NOT_FOUND
-	) {
-		photoWidth = photoObject.width_s;
-		photoHeight = photoObject.height_s;
-	} else if (
-		photoUrl.indexOf('_t.jpg') != INDEX_NOT_FOUND
-	) {
-		photoWidth = photoObject.width_t;
-		photoHeight = photoObject.height_t;
-	} else if (
-		photoUrl.indexOf('_sq.jpg') != INDEX_NOT_FOUND
-	) {
-		photoWidth = photoObject.width_sq;
-		photoHeight = photoObject.height_sq;
-	}
+	for (var suffixIndex = 0; suffixIndex < FLICKR_PHOTO_SIZE_SUFFIXES.length; suffixIndex++) {
+		//--------------------------------------
+		// loop initalizations
+		//--------------------------------------
+		photoSizeDesignator = FLICKR_PHOTO_SIZE_SUFFIXES[suffixIndex];
+		photoSizeSearchSuffix = photoSizeSuffixSeparator + photoSizeDesignator + photoExtension;
+
+		//--------------------------------------
+		// check the size to make sure we get
+		// the correct properties
+		//--------------------------------------
+		if (photoUrl.indexOf(photoSizeSearchSuffix) > INDEX_NOT_FOUND) {
+			widthProperty = 'width_' + photoSizeDesignator;
+			heightProperty = 'height_' * photoSizeDesignator;
+			photoWidth = photoObject[widthProperty];
+			photoHeight = photoObject[heightProperty];
+			break;
+		}
+	};
 
 	//photo dimensions as a json object
 	return {
@@ -349,6 +318,8 @@ function findLinkForLargestPhotoSize(photoObject, selectedPhotoSizes) {
 	// biggest to smallest 
 	// (details on official flickr site)
 	//--------------------------------------
+	var photoSizeSearchSuffix = '';
+	var urlProperty = '';
 	var photoUrl = '';
 
 	//--------------------------------------
@@ -375,6 +346,7 @@ function findLinkForLargestPhotoSize(photoObject, selectedPhotoSizes) {
 			&& selectedPhotoSizes.indexOf(photoSizeSearchSuffix) > INDEX_NOT_FOUND
 		) {
 			photoUrl = photoObject[urlProperty];
+			break;
 		}
 	};
 	//--------------------------------------
