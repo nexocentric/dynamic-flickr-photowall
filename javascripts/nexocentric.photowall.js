@@ -420,8 +420,13 @@ function findLinkForLargestPhotoSize(photoObject, selectedPhotoSizes) {
 // [author]
 // Dodzi Y. Dzakuma
 // [summary]
+// Returns an array that has the values that are in the
+// first array, but not in the second array.
 // [parameters]
+// 1) array to get the difference from
+// 2) array to compare against
 // [return]
+// 1) an array with the difference of the two arrays
 //---------------------------------------------------------
 function arrayDifference(array1, array2) {
 	return $(array1).not(array2).get();
@@ -431,8 +436,14 @@ function arrayDifference(array1, array2) {
 // [author]
 // Dodzi Y. Dzakuma
 // [summary]
+// Parses the response from Flickr and prepares some of the
+// pictures to be dipslay on the photowall.
 // [parameters]
+// 1) the json object response from Flickr
 // [return]
+// 1) true on successful parse
+// 2) an empty array if there are no new picures to display
+//    and the wall is full
 //---------------------------------------------------------
 function parseFlickrPhotoList(json) {
 	//--------------------------------------
