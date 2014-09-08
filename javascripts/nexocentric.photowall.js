@@ -20,6 +20,7 @@ var typeUndefined = 'undefined';
 var typeNumber = 'number';
 var typeObject = 'object';
 var INDEX_NOT_FOUND = -1;
+var FLICKR_PHOTO_SIZE_SUFFIXES = ['o', 'l', 'b', 'c', 'z', 'n', 'm', 'q', 's', 't', 'sq'];
 var SELECTED_LANDSCAPE_PHOTO_SIZES = ['b', 'c', 'z'];
 var SELECTED_PORTRAIT_PHOTO_SIZES = ['m', 'q'];
 var SELECTED_PHOTO_SIZES = SELECTED_LANDSCAPE_PHOTO_SIZES.concat(SELECTED_PORTRAIT_PHOTO_SIZES);
@@ -351,66 +352,36 @@ function findLinkForLargestPhotoSize(photoObject, selectedPhotoSizes) {
 	var photoUrl = '';
 
 	//--------------------------------------
+	// loop through a list of possible
+	// urls to make sure that the size we
+	// want has an available link for use
+	//--------------------------------------
+	for (var suffixIndex = 0; suffixIndex < FLICKR_PHOTO_SIZE_SUFFIXES.length; suffixIndex++) {
+		//--------------------------------------
+		// loop initalizations
+		//--------------------------------------
+		photoSizeSearchSuffix = FLICKR_PHOTO_SIZE_SUFFIXES[suffixIndex];
+		urlProperty = 'url_' + photoSizeSearchSuffix;
+
+		//--------------------------------------
+		// make sure that the link exists and
+		// we've defined it as a size we want
+		// in JavaScript
+		// object.property and object[property]
+		// are the same
+		//--------------------------------------
+		if (
+			typeof photoObject[urlProperty] !== typeUndefined
+			&& selectedPhotoSizes.indexOf(photoSizeSearchSuffix) > INDEX_NOT_FOUND
+		) {
+			photoUrl = photoObject[urlProperty];
+		}
+	};
+	//--------------------------------------
 	// these are all sizes as specified by
 	// the Flickr documents for their photo
 	// search function on their website
 	//--------------------------------------
-	if (
-		typeof photoObject.url_o !== typeUndefined
-		&& selectedPhotoSizes.indexOf('o') > INDEX_NOT_FOUND
-	) {
-		photoUrl = photoObject.url_o;
-	} else if (
-		typeof photoObject.url_l !== typeUndefined
-		&& selectedPhotoSizes.indexOf('l') > INDEX_NOT_FOUND
-	) {
-		photoUrl = photoObject.url_l;
-	} else if (
-		photoObject.url_b 
-		&& selectedPhotoSizes.indexOf('b') > INDEX_NOT_FOUND
-	) {
-		photoUrl = photoObject.url_b;
-	} else if (
-		typeof photoObject.url_c !== typeUndefined
-		&& selectedPhotoSizes.indexOf('c') > INDEX_NOT_FOUND
-	) {
-		photoUrl = photoObject.url_c;
-	} else if (
-		typeof photoObject.url_z !== typeUndefined
-		&& selectedPhotoSizes.indexOf('z') > INDEX_NOT_FOUND
-	) {
-		photoUrl = photoObject.url_z;
-	} else if (
-		typeof photoObject.url_n !== typeUndefined
-		&& selectedPhotoSizes.indexOf('n') > INDEX_NOT_FOUND
-	) {
-		photoUrl = photoObject.url_n;
-	} else if (
-		typeof photoObject.url_m !== typeUndefined
-		&& selectedPhotoSizes.indexOf('m') > INDEX_NOT_FOUND
-	) {
-		photoUrl = photoObject.url_m;
-	} else if (
-		typeof photoObject.url_q !== typeUndefined
-		&& selectedPhotoSizes.indexOf('q') > INDEX_NOT_FOUND
-	) {
-		photoUrl = photoObject.url_q;
-	} else if (
-		typeof photoObject.url_s !== typeUndefined
-		&& selectedPhotoSizes.indexOf('s') > INDEX_NOT_FOUND
-	) {
-		photoUrl = photoObject.url_s;
-	} else if (
-		typeof photoObject.url_t !== typeUndefined
-		&& selectedPhotoSizes.indexOf('t') > INDEX_NOT_FOUND
-	) {
-		photoUrl = photoObject.url_t;
-	} else if (
-		typeof photoObject.url_sq !== typeUndefined
-		&& selectedPhotoSizes.indexOf('sq') > INDEX_NOT_FOUND
-	) {
-		photoUrl = photoObject.url_sq;
-	}
 
 	//--------------------------------------
 	return photoUrl;
