@@ -210,7 +210,18 @@ function countPhotoFrames(countEmptyFrames) {
 
 }
 
-
+//---------------------------------------------------------
+// [author]
+// Dodzi Y. Dzakuma
+// [summary]
+// Gets the exact dimensions of the image to be displayed.
+// [parameters]
+// 1) the photo object from the Flickr list
+// 2) the URL of the photo to display
+// [return]
+// 1) a JSON object with the width and height of the photo
+//    (selectable via object.width & object.height)
+//---------------------------------------------------------
 function getPhotoDimensions(photoObject, photoUrl) {
 	//--------------------------------------
 	// initializations
@@ -280,12 +291,26 @@ function getPhotoDimensions(photoObject, photoUrl) {
 		photoHeight = photoObject.height_sq;
 	}
 
+	//photo dimensions as a json object
 	return {
 		width: photoWidth,
 		height: photoHeight
 	};
 }
 
+//---------------------------------------------------------
+// [author]
+// Dodzi Y. Dzakuma
+// [summary]
+// Finds whether a photo is in landscape or portrait
+// orientation.
+// [parameters]
+// 1) the photo object from the Flickr list
+// 2) a list of all the selected photo sizes that could be
+//    used for display
+// [return]
+// 1) a string representing the orientation
+//---------------------------------------------------------
 function calculatePhotoOrientation(photoObject, selectedPhotoSizes) {
 	//--------------------------------------
 	// initializations
