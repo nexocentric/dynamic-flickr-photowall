@@ -38,13 +38,13 @@ var FLICKR_USER_ID_FOR_SEARCH = '42488861@N06';
 // [return]
 // none
 //---------------------------------------------------------
-function addPhoto(imagePath, uploadTimestamp, jqueryObject) {
+function addPhoto(imagePath, uploadTimestamp, jqueryObject, photoWidth, photoHeight) {
 	//--------------------------------------
 	// load the photo from its url and
 	// add it to the photowall when loaded
 	//--------------------------------------
 	var tooltip = $('<span data-tooltip aria-haspopup="true" class="has-tip" data-options="show_on:large" title="Large Screen Sizes"></span>');
-	var img = $('<img class="photo" width="100%" alt="SOMETHING!">').attr('src', imagePath).attr(timestampAttribute, uploadTimestamp).load(function() {
+	var img = $('<img class="photo" width="100%" data-width="' + photoWidth + '" data-height="' + photoHeight + '" alt="SOMETHING!">').attr('src', imagePath).attr(timestampAttribute, uploadTimestamp).load(function() {
 		if (!this.complete || typeof this.naturalWidth == "undefined" || this.naturalWidth == 0) {
 			console.log('Image does not exist.');
 		} else {
@@ -210,11 +210,11 @@ function countPhotoFrames(countEmptyFrames) {
 
 }
 
-function calculatePhotoOrientation(photoObject, selectedPhotoSizes) {
+
+function getPhotoDimensions(photoObject, photoUrl) {
 	//--------------------------------------
 	// initializations
 	//--------------------------------------
-	var photoUrl = findLinkForLargestPhotoSize(photoObject, selectedPhotoSizes);
 	var photoWidth = 0;
 	var photoHeight = 0;
 
@@ -280,12 +280,25 @@ function calculatePhotoOrientation(photoObject, selectedPhotoSizes) {
 		photoHeight = photoObject.height_sq;
 	}
 
+	return {
+		width: photoWidth,
+		height: photoHeight
+	};
+}
+
+function calculatePhotoOrientation(photoObject, selectedPhotoSizes) {
+	//--------------------------------------
+	// initializations
+	//--------------------------------------
+	var photoUrl = findLinkForLargestPhotoSize(photoObject, selectedPhotoSizes);
+	var photoDimensions = getPhotoDimensions(photoObject, photoUrl);
+
 	//--------------------------------------
 	// get the orientation
 	//--------------------------------------
-	if (photoWidth > photoHeight) {
+	if (photoDimensions.width > photoDimensions.height) {
 		return 'landscape';
-	} else if (photoWidth < photoHeight) {
+	} else if (photoDimensions.width < photoDimensions.height) {
 		return 'portrait';
 	}
 	return 'square';
@@ -474,7 +487,7 @@ function parseFlickrPhotoList(json) {
 			continue;
 		}
 
-		//if it's been deleted make sure not to display it again
+		//select the size by orientation
 		photoOrientation = calculatePhotoOrientation(photoList[photoIndex], SELECTED_PHOTO_SIZES);
 		if (photoOrientation == 'portrait') {
 			photoUrl = findLinkForLargestPhotoSize(photoList[photoIndex], SELECTED_PORTRAIT_PHOTO_SIZES);
@@ -482,16 +495,26 @@ function parseFlickrPhotoList(json) {
 			photoUrl = findLinkForLargestPhotoSize(photoList[photoIndex], SELECTED_LANDSCAPE_PHOTO_SIZES);
 		}
 
-		//photoUrl = findLinkForLargestPhotoSize(photoList[photoIndex], SELECTED_PHOTO_SIZES);
+		//the photo doesn't have the url we're looking for,
+		//so don't add it to the wall
 		if (photoUrl == '') {
 			continue;
 		}
 
-		//if it's been deleted make sure not to display it again
+		//this is a unique id used to find the photo on the wall
 		photoUploadDate = photoList[photoIndex].dateupload;
 
-		//
-		addPhoto(photoUrl, photoUploadDate, emptyPhotoFramesJqueryObject[photoIndex]);
+		//needed to add special effects to the frame
+		photoDimensions = getPhotoDimensions(photoList[photoIndex], photoUrl);
+		
+		//this downloads the photo and adds it to the wall
+		addPhoto(
+			photoUrl, 
+			photoUploadDate, 
+			emptyPhotoFramesJqueryObject[photoIndex],
+			photoDimensions.width,
+			photoDimensions.height	
+		);
 	}
 	return true;
 }
