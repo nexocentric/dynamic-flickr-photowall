@@ -8,71 +8,80 @@
 		<link rel="stylesheet" href="stylesheets/site.css">
 		<script type="text/javascript" src="javascripts/modernizr.js"></script>
 		<script type="text/javascript" src="javascripts/nexocentric.photowall.js"></script>
+		<style type="text/css">
+			.row.three-quarters-width {
+				width: 75%;
+				margin-left: auto;
+				margin-right: auto;
+				max-width: initial;
+			}
+
+			.vertical-align-element {
+				position: relative;
+				top: 50%;
+				transform: translateY(-50%);
+			}
+		</style>
 	</head>
 	<body>
-		<p>Simple Page With Javascript</p>
+		<p><span data-tooltip aria-haspopup="true" class="has-tip" data-options="show_on:large" title="Large Screen Sizes">Simple Page With Javascript</span></p>
 
 		<button onclick="pollFlickrServer();">
 			Hello
 		</button>
 
-		<ul id="dynamic-photo-wall" class="small-block-grid-2 medium-block-grid-3 large-block-grid-4">
-			<li>
-				<ul class="no-bullet">
+		<div class="row three-quarters-width">
+			<div class="twelve columns">
+				<ul id="dynamic-photo-wall" class="small-block-grid-3 medium-block-grid-4 large-block-grid-5">
 					<li>
-						<div id="frame1" class="photo-frame"><span>&nbsp;</span></div>
+						<div id="frame1" class="photo-frame vertical-align-element"><span>&nbsp;</span></div>
 					</li>
 					<li>
-						<div id="frame2" class="photo-frame"><span>&nbsp;</span></div>
+						<div id="frame2" class="photo-frame vertical-align-element"><span>&nbsp;</span></div>
 					</li>
 					<li>
-						<div id="frame3" class="photo-frame"><span>&nbsp;</span></div>
-					</li>
-				</ul>
-			</li>
-
-			<li>
-				<ul class="no-bullet">
-					<li>
-						<div id="frame4" class="photo-frame"><span>&nbsp;</span></div>
+						<div id="frame3" class="photo-frame vertical-align-element"><span>&nbsp;</span></div>
 					</li>
 					<li>
-						<div id="frame5" class="photo-frame"><span>&nbsp;</span></div>
+						<div id="frame4" class="photo-frame vertical-align-element"><span>&nbsp;</span></div>
 					</li>
 					<li>
-						<div id="frame6" class="photo-frame"><span>&nbsp;</span></div>
-					</li>
-				</ul>
-			</li>
-
-			<li>
-				<ul class="no-bullet">
-					<li>
-						<div id="frame7" class="photo-frame"><span>&nbsp;</span></div>
+						<div id="frame5" class="photo-frame vertical-align-element"><span>&nbsp;</span></div>
 					</li>
 					<li>
-						<div id="frame8" class="photo-frame"><span>&nbsp;</span></div>
+						<div id="frame6" class="photo-frame vertical-align-element"><span>&nbsp;</span></div>
 					</li>
 					<li>
-						<div id="frame9" class="photo-frame"><span>&nbsp;</span></div>
-					</li>
-				</ul>
-			</li>
-
-			<li>
-				<ul class="no-bullet">
-					<li>
-						<div id="frame10" class="photo-frame"><span>&nbsp;</span></div>
+						<div id="frame7" class="photo-frame vertical-align-element"><span>&nbsp;</span></div>
 					</li>
 					<li>
-						<div id="frame11" class="photo-frame"><span>&nbsp;</span></div>
+						<div id="frame8" class="photo-frame vertical-align-element"><span>&nbsp;</span></div>
 					</li>
 					<li>
-						<div id="frame12" class="photo-frame"><span>&nbsp;</span></div>
+						<div id="frame9" class="photo-frame vertical-align-element"><span>&nbsp;</span></div>
+					</li>
+					<li>
+						<div id="frame10" class="photo-frame vertical-align-element"><span>&nbsp;</span></div>
+					</li>
+					<li>
+						<div id="frame11" class="photo-frame vertical-align-element"><span>&nbsp;</span></div>
+					</li>
+					<li>
+						<div id="frame12" class="photo-frame vertical-align-element"><span>&nbsp;</span></div>
+					</li>
+					<li>
+						<div id="frame13" class="photo-frame vertical-align-element"><span>&nbsp;</span></div>
+					</li>
+					<li>
+						<div id="frame14" class="photo-frame vertical-align-element"><span>&nbsp;</span></div>
+					</li>
+					<li>
+						<div id="frame15" class="photo-frame vertical-align-element"><span>&nbsp;</span></div>
 					</li>
 				</ul>
-			</li>
-		</ul>
+			</div>
+		</div>
+		
 
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<script type="text/javascript">

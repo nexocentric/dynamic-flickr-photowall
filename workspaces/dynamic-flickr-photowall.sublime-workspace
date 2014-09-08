@@ -4,16 +4,64 @@
 		"selected_items":
 		[
 			[
-				"phot",
-				"photoFrameId"
+				"fun",
+				"functionHandle"
 			],
 			[
-				"pho",
-				"photoFrameId"
+				"arra",
+				"arrayDifference"
+			],
+			[
+				"type",
+				"typeObject"
+			],
+			[
+				"phot",
+				"photoList"
 			],
 			[
 				"photo",
-				"photo-frame"
+				"photoUrl"
+			],
+			[
+				"pho",
+				"photoUrl"
+			],
+			[
+				"count",
+				"countPhotoFrames"
+			],
+			[
+				"fr",
+				"frameType"
+			],
+			[
+				"un",
+				"typeUndefined"
+			],
+			[
+				"dele",
+				"deleteList"
+			],
+			[
+				"fick",
+				"pollFlickrServer"
+			],
+			[
+				"fik",
+				"flickrPollingInterval"
+			],
+			[
+				"poll",
+				"pollFlickrServer"
+			],
+			[
+				"re",
+				"returnValue"
+			],
+			[
+				"po",
+				"pollingInterval"
 			],
 			[
 				"time",
@@ -122,10 +170,6 @@
 			[
 				"ESCA",
 				"ESCAPE_SEQUENCE_START"
-			],
-			[
-				"re",
-				"red_admiral"
 			],
 			[
 				"DODGER",
@@ -470,59 +514,40 @@
 			[
 				"subTe",
 				"subTemplateList"
-			],
-			[
-				"plac",
-				"placeholderName"
-			],
-			[
-				"bo",
-				"boilerplateTemplatePath"
-			],
-			[
-				"str_re",
-				"str_replace"
-			],
-			[
-				"gener",
-				"generateUrlToolkit"
-			],
-			[
-				"web",
-				"webserverErrorCode"
-			],
-			[
-				"link",
-				"linkName"
-			],
-			[
-				"template",
-				"templateName"
-			],
-			[
-				"we",
-				"webserverErrorCode"
-			],
-			[
-				"error",
-				"error404"
-			],
-			[
-				"u",
-				"ul	Tag"
-			],
-			[
-				"lo",
-				"localizePage"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
+			"file": "/W/dynamic-flickr-photowall/app.html",
 			"settings":
 			{
-				"buffer_size": 0,
+				"buffer_size": 3637,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/W/dynamic-flickr-photowall/tests/nexocentric.photowall-test.html",
+			"settings":
+			{
+				"buffer_size": 1226,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/W/dynamic-flickr-photowall/javascripts/nexocentric.photowall.js",
+			"settings":
+			{
+				"buffer_size": 15091,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/W/dynamic-flickr-photowall/tests/nexocentric.photowall-test.js",
+			"settings":
+			{
+				"buffer_size": 19763,
 				"line_ending": "Windows"
 			}
 		}
@@ -946,6 +971,101 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"getMaxFromFlickr",
+			"pollingInterval",
+			"'.photo'",
+			"<div id=\"frame",
+			"<ul>",
+			"deleteImage",
+			"addImage",
+			"image",
+			"[author]\n// [",
+			"equals",
+			"fetchTimestampsFromFlickrList",
+			"fetchTimestampsFromPhotowall",
+			"filterPhotosForDisplay",
+			"deleteList",
+			").not(",
+			"diff",
+			"=",
+			"displayList = newestFlickrPhotosTimestamps.diff(photoWallTimestamps);\n	deleteList = photoWallTimestamps.diff(newestFlickrPhotosTimestamps);",
+			"getUploadTimestampsFromPhotoWall",
+			"QUnit.test(\"findLinkForLargestPhotoSize function\", function(assert) {\n	var returnValue = findLinkForLargestPhotoSize(samplePhotoList1.photos.photo[0], []);\n	assert.deepEqual(returnValue, '', 'returns empty string when size list not defined');\n\n	returnValue = findLinkForLargestPhotoSize(samplePhotoList1.photos.photo[0], ['fff', 'xxx']);\n	assert.deepEqual(returnValue, '', 'returns empty string when url not not found');\n\n	returnValue = findLinkForLargestPhotoSize(samplePhotoList1.photos.photo[1], ['x', 'y', 'b', 'c']);\n	assert.ok(returnValue != '', 'returns url when found');\n});",
+			"getNewestFlickrTimestamps",
+			"(photoObject",
+			"photoObject",
+			"break;",
+			"typeof",
+			"typeof ",
+			"selectedPhotoSizes.indexOf(photoSize)",
+			"photoUrl = ",
+			"Of(",
+			"i",
+			"' in",
+			"\", \"",
+			", \"",
+			" \"i",
+			" \"I",
+			" \"i",
+			" \"I",
+			" \"i",
+			" \"I",
+			" \"i",
+			" \"I",
+			" \"i",
+			" \"I",
+			" \"i",
+			" \"I",
+			" \"i",
+			" \"I",
+			" \"i",
+			" \"I",
+			" \"i",
+			" \"I",
+			" \"i",
+			" \"I",
+			" \"i",
+			" \"I",
+			" \"i",
+			" \"I",
+			" \"i",
+			", \"l",
+			" \"da",
+			", \"is",
+			", \"t",
+			", \"se",
+			"{ \"id\":",
+			", \"o",
+			"SELECTED_PHOTO_SIZES",
+			"selectedPhotoSizes",
+			"typeUndefined",
+			"photoList[photoIndex]",
+			" else if (typeof photoList[photoIndex].url_t !== typeUndefined) {\n		photoUrl = photoList[photoIndex].url_t;\n	}",
+			"typeof ",
+			"(photoList[photoIndex].url",
+			"frameType",
+			"emptyPhotoFrames",
+			"photosDisplayed",
+			"availablePhotoFrames",
+			"photosDisplayedOnPhotowall",
+			"countPhotoFrames",
+			"getFrameCount",
+			"<span>&nbsp;</span>",
+			"countEmptyFramesOnly",
+			"countEmptyFrames",
+			"emptyStatus",
+			"photosDisplayed",
+			"toggleTimeout",
+			"toogleTimeout",
+			"8600406238",
+			"10",
+			"1",
+			"8600406238",
+			"10",
+			"8600406238",
+			"parseNewestPhotoList",
+			"functionHandle",
+			"startPoll",
 			"exists",
 			"<span>",
 			"each",
@@ -978,102 +1098,7 @@
 			"colorize_background",
 			"print(\"\", \"\")",
 			"def ",
-			"instrument_options",
-			"instruments",
-			"selected_instrument",
-			"\"1;2;4;5;7;8\"",
-			"red",
-			"holl",
-			"BACKGROUND_REGEX",
-			"FORMATS_REGEX",
-			"== None",
-			"none",
-			"None",
-			"none",
-			"None",
-			"foreground",
-			"text",
-			"test_code",
-			"test_string",
-			"RED_SYSTEM",
-			"_code_clean_",
-			"_clean_",
-			"de_part = test_code + ESCAPE_SEQUENCE_END",
-			"ending_co",
-			"FORMATTING_CODES",
-			"DEFAULT_COLOR_CODE",
-			"red_admiral.CO",
-			".get(",
-			"ESCAPE_SEQUENCE_END",
-			"assert()",
-			"red_admiral.insert_",
-			"DEFAULT_CLEAN_STRING",
-			":",
-			";",
-			"{0,2}",
-			"FORMATS_REGEX",
-			"formating",
-			"string_parts",
-			"text",
-			"string_parts = red_admiral.break_string_into_parts(test_string)",
-			",",
-			"None",
-			"string_parts",
-			"escaped_string",
-			"ESCAPE_SEQUENCE_END",
-			"E",
-			"ESCAPE_SEQUENCE_START",
-			"replace",
-			"FORMATTING_RESET_SEQUENCE",
-			"HIDDEN",
-			"\"super cali fragi listic expi ali docious\"",
-			"formatted_string",
-			"formatting_codes",
-			"parsed_formatting_codes",
-			"FOREGROUND_REGEX",
-			"text_regex",
-			" +",
-			"break_string_into_parts",
-			"insertFormattingCode",
-			"parsed_formatting_codes",
-			"formats",
-			"separate_codes_and_string",
-			";",
-			")\n{",
-			"{",
-			"open_escape_sequence",
-			"openEscapeSequence",
-			"escape_sequence_present",
-			"SHELL_QUOTE",
-			"-",
-			"red",
-			"TEXT_FORMAT_",
-			"TEXT_FORMAT_HIDDEN",
-			"WHITE_100",
-			"\"#",
-			"WHITE_100",
-			"[\\S_]+? = \\(",
-			"WHITE_100",
-			"\" \"",
-			"255",
-			"WHITE_100",
-			"eeeeee",
-			"\"#",
-			"WHITE_100",
-			"= \\([\\d]+",
-			"= \\([\\d]*",
-			" = ",
-			"ctrl\\+u",
-			"=",
-			"export ",
-			"informational_textfile",
-			" = ",
-			"instruments",
-			"instrument_to_run",
-			"instrument",
-			"module",
-			"SQL_ANALYZER_INSTRUMENT",
-			"database_"
+			"instrument_options"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1094,22 +1119,23 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
+					"file": "/W/dynamic-flickr-photowall/app.html",
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 3637,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								467,
+								433
 							]
 						],
 						"settings":
@@ -1204,10 +1230,363 @@
 								"Ruby on Rails": "ruby"
 							},
 							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/W/dynamic-flickr-photowall/tests/nexocentric.photowall-test.html",
+					"settings":
+					{
+						"buffer_size": 1226,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								685,
+								685
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+								"php": "%DROPBOX_ROOT%/portable/applications/php/php.exe"
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/W/dynamic-flickr-photowall/javascripts/nexocentric.photowall.js",
+					"settings":
+					{
+						"buffer_size": 15091,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								14425,
+								14425
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"auto_name": "",
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+								"php": "%DROPBOX_ROOT%/portable/applications/php/php.exe"
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 429.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/W/dynamic-flickr-photowall/tests/nexocentric.photowall-test.js",
+					"settings":
+					{
+						"buffer_size": 19763,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								11039,
+								11039
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+								"php": "%DROPBOX_ROOT%/portable/applications/php/php.exe"
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 4149.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1261,6 +1640,10 @@
 		"selected_items":
 		[
 			[
+				"",
+				"app.html"
+			],
+			[
 				"pri",
 				"templates/footer-templates/privacy-policy.tmpl"
 			],
@@ -1283,10 +1666,6 @@
 			[
 				"pr",
 				"templates/products.tmpl"
-			],
-			[
-				"",
-				"templates/facials.tmpl"
 			],
 			[
 				"new",

@@ -8,7 +8,7 @@ var ajaxRequest = null;
 var ajaxTimeout = 300000;
 var flickrOptions = "";
 var displayPhotos = "";
-var maxDisplayNumber = 12;
+var maxDisplayNumber = 15;
 var emptyPhotoFrameSelector = '.photo-frame > span';
 var filledPhotoFrameSelector = '.photo-frame > img';
 var photoSelector = '.photo';
@@ -19,7 +19,10 @@ var typeFunction = 'function';
 var typeUndefined = 'undefined';
 var typeNumber = 'number';
 var typeObject = 'object';
-var SELECTED_PHOTO_SIZES = ['b', 'c', 'z'];
+var INDEX_NOT_FOUND = -1;
+var SELECTED_LANDSCAPE_PHOTO_SIZES = ['b', 'c', 'z'];
+var SELECTED_PORTRAIT_PHOTO_SIZES = ['m', 'q'];
+var SELECTED_PHOTO_SIZES = SELECTED_LANDSCAPE_PHOTO_SIZES.concat(SELECTED_PORTRAIT_PHOTO_SIZES);
 var FLICKR_USER_ID_FOR_SEARCH = '42488861@N06';
 
 //---------------------------------------------------------
@@ -40,7 +43,8 @@ function addPhoto(imagePath, uploadTimestamp, jqueryObject) {
 	// load the photo from its url and
 	// add it to the photowall when loaded
 	//--------------------------------------
-	var img = $('<img class="photo" width="100%" alt="">').attr('src', imagePath).attr(timestampAttribute, uploadTimestamp).load(function() {
+	var tooltip = $('<span data-tooltip aria-haspopup="true" class="has-tip" data-options="show_on:large" title="Large Screen Sizes"></span>');
+	var img = $('<img class="photo" width="100%" alt="SOMETHING!">').attr('src', imagePath).attr(timestampAttribute, uploadTimestamp).load(function() {
 		if (!this.complete || typeof this.naturalWidth == "undefined" || this.naturalWidth == 0) {
 			console.log('Image does not exist.');
 		} else {
@@ -206,6 +210,87 @@ function countPhotoFrames(countEmptyFrames) {
 
 }
 
+function calculatePhotoOrientation(photoObject, selectedPhotoSizes) {
+	//--------------------------------------
+	// initializations
+	//--------------------------------------
+	var photoUrl = findLinkForLargestPhotoSize(photoObject, selectedPhotoSizes);
+	var photoWidth = 0;
+	var photoHeight = 0;
+
+	//--------------------------------------
+	// these are all sizes as specified by
+	// the Flickr documents for their photo
+	// search function on their website
+	//--------------------------------------
+	if (
+		photoUrl.indexOf('_o.jpg') != INDEX_NOT_FOUND
+	) {
+		photoWidth = photoObject.width_o;
+		photoHeight = photoObject.height_o;
+	} else if (
+		photoUrl.indexOf('_l.jpg') != INDEX_NOT_FOUND
+	) {
+		photoWidth = photoObject.width_l;
+		photoHeight = photoObject.height_l;
+	} else if (
+		photoUrl.indexOf('_b.jpg') != INDEX_NOT_FOUND
+	) {
+		photoWidth = photoObject.width_b;
+		photoHeight = photoObject.height_b;
+	} else if (
+		photoUrl.indexOf('_c.jpg') != INDEX_NOT_FOUND
+	) {
+		photoWidth = photoObject.width_c;
+		photoHeight = photoObject.height_c;
+	} else if (
+		photoUrl.indexOf('_z.jpg') != INDEX_NOT_FOUND
+	) {
+		photoWidth = photoObject.width_z;
+		photoHeight = photoObject.height_z;
+	} else if (
+		photoUrl.indexOf('_n.jpg') != INDEX_NOT_FOUND
+	) {
+		photoWidth = photoObject.width_n;
+		photoHeight = photoObject.height_n;
+	} else if (
+		photoUrl.indexOf('_m.jpg') != INDEX_NOT_FOUND
+	) {
+		photoWidth = photoObject.width_m;
+		photoHeight = photoObject.height_m;
+	} else if (
+		photoUrl.indexOf('_q.jpg') != INDEX_NOT_FOUND
+	) {
+		photoWidth = photoObject.width_q;
+		photoHeight = photoObject.height_q;
+	} else if (
+		photoUrl.indexOf('_s.jpg') != INDEX_NOT_FOUND
+	) {
+		photoWidth = photoObject.width_s;
+		photoHeight = photoObject.height_s;
+	} else if (
+		photoUrl.indexOf('_t.jpg') != INDEX_NOT_FOUND
+	) {
+		photoWidth = photoObject.width_t;
+		photoHeight = photoObject.height_t;
+	} else if (
+		photoUrl.indexOf('_sq.jpg') != INDEX_NOT_FOUND
+	) {
+		photoWidth = photoObject.width_sq;
+		photoHeight = photoObject.height_sq;
+	}
+
+	//--------------------------------------
+	// get the orientation
+	//--------------------------------------
+	if (photoWidth > photoHeight) {
+		return 'landscape';
+	} else if (photoWidth < photoHeight) {
+		return 'portrait';
+	}
+	return 'square';
+}
+
 //---------------------------------------------------------
 // [author]
 // Dodzi Y. Dzakuma
@@ -226,38 +311,67 @@ function findLinkForLargestPhotoSize(photoObject, selectedPhotoSizes) {
 	// (details on official flickr site)
 	//--------------------------------------
 	var photoUrl = '';
-	var urlNotFound = -1;
 
-	// s	small square 75x75
-	// q	large square 150x150
-	// t	thumbnail, 100 on longest side
-	// m	small, 240 on longest side
-	// n	small, 320 on longest side
-	// -	medium, 500 on longest side
-	// z	medium 640, 640 on longest side
-	// c	medium 800, 800 on longest side†
-	// b	large, 1024 on longest side*
-	// o	original image, either a jpg, gif or png, depending on source format
+	//--------------------------------------
+	// these are all sizes as specified by
+	// the Flickr documents for their photo
+	// search function on their website
+	//--------------------------------------
 	if (
-		photoObject.url_o 
-		&& selectedPhotoSizes.indexOf('o') > urlNotFound
+		typeof photoObject.url_o !== typeUndefined
+		&& selectedPhotoSizes.indexOf('o') > INDEX_NOT_FOUND
 	) {
 		photoUrl = photoObject.url_o;
 	} else if (
+		typeof photoObject.url_l !== typeUndefined
+		&& selectedPhotoSizes.indexOf('l') > INDEX_NOT_FOUND
+	) {
+		photoUrl = photoObject.url_l;
+	} else if (
 		photoObject.url_b 
-		&& selectedPhotoSizes.indexOf('b') > urlNotFound
+		&& selectedPhotoSizes.indexOf('b') > INDEX_NOT_FOUND
 	) {
 		photoUrl = photoObject.url_b;
 	} else if (
-		photoObject.url_c 
-		&& selectedPhotoSizes.indexOf('c') > urlNotFound
+		typeof photoObject.url_c !== typeUndefined
+		&& selectedPhotoSizes.indexOf('c') > INDEX_NOT_FOUND
 	) {
 		photoUrl = photoObject.url_c;
 	} else if (
-		photoObject.url_z 
-		&& selectedPhotoSizes.indexOf('z') > urlNotFound
+		typeof photoObject.url_z !== typeUndefined
+		&& selectedPhotoSizes.indexOf('z') > INDEX_NOT_FOUND
 	) {
 		photoUrl = photoObject.url_z;
+	} else if (
+		typeof photoObject.url_n !== typeUndefined
+		&& selectedPhotoSizes.indexOf('n') > INDEX_NOT_FOUND
+	) {
+		photoUrl = photoObject.url_n;
+	} else if (
+		typeof photoObject.url_m !== typeUndefined
+		&& selectedPhotoSizes.indexOf('m') > INDEX_NOT_FOUND
+	) {
+		photoUrl = photoObject.url_m;
+	} else if (
+		typeof photoObject.url_q !== typeUndefined
+		&& selectedPhotoSizes.indexOf('q') > INDEX_NOT_FOUND
+	) {
+		photoUrl = photoObject.url_q;
+	} else if (
+		typeof photoObject.url_s !== typeUndefined
+		&& selectedPhotoSizes.indexOf('s') > INDEX_NOT_FOUND
+	) {
+		photoUrl = photoObject.url_s;
+	} else if (
+		typeof photoObject.url_t !== typeUndefined
+		&& selectedPhotoSizes.indexOf('t') > INDEX_NOT_FOUND
+	) {
+		photoUrl = photoObject.url_t;
+	} else if (
+		typeof photoObject.url_sq !== typeUndefined
+		&& selectedPhotoSizes.indexOf('sq') > INDEX_NOT_FOUND
+	) {
+		photoUrl = photoObject.url_sq;
 	}
 
 	//--------------------------------------
@@ -361,7 +475,14 @@ function parseFlickrPhotoList(json) {
 		}
 
 		//if it's been deleted make sure not to display it again
-		photoUrl = findLinkForLargestPhotoSize(photoList[photoIndex], SELECTED_PHOTO_SIZES);
+		photoOrientation = calculatePhotoOrientation(photoList[photoIndex], SELECTED_PHOTO_SIZES);
+		if (photoOrientation == 'portrait') {
+			photoUrl = findLinkForLargestPhotoSize(photoList[photoIndex], SELECTED_PORTRAIT_PHOTO_SIZES);
+		} else {
+			photoUrl = findLinkForLargestPhotoSize(photoList[photoIndex], SELECTED_LANDSCAPE_PHOTO_SIZES);
+		}
+
+		//photoUrl = findLinkForLargestPhotoSize(photoList[photoIndex], SELECTED_PHOTO_SIZES);
 		if (photoUrl == '') {
 			continue;
 		}
@@ -455,7 +576,7 @@ function pollFlickrServer() {
 			content_type: 1,
 			per_page: getMaxFromFlickr,
 			user_id: FLICKR_USER_ID_FOR_SEARCH,
-			extras: 'date_upload,url_b,url_c,url_z,url_n'
+			extras: 'date_upload,url_b,url_c,url_z,url_n,url_l,url_q,url_sq,url_m'
 		},
 		success: parseFlickrPhotoList,
 		dataType: 'json',
