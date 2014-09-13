@@ -4,28 +4,64 @@
 		"selected_items":
 		[
 			[
+				"photo",
+				"photo-overlay"
+			],
+			[
+				"ur",
+				"urlProperty"
+			],
+			[
+				"phoos",
+				"photoSizeSearchSuffix"
+			],
+			[
+				"F",
+				"FLICKR_PHOTO_SIZE_SUFFIXES"
+			],
+			[
+				"pho",
+				"photoHeight"
+			],
+			[
+				"get",
+				"getPhotoDimensions"
+			],
+			[
+				"SELE",
+				"SELECTED_LANDSCAPE_PHOTO_SIZES"
+			],
+			[
+				"find",
+				"findLinkForLargestPhotoSize"
+			],
+			[
+				"phot",
+				"photoUrl"
+			],
+			[
+				"selected",
+				"selectedPhotoSizes"
+			],
+			[
+				"sele",
+				"selectedPhotoSizes"
+			],
+			[
+				"type",
+				"typeUndefined"
+			],
+			[
+				"he",
+				"max-height"
+			],
+			[
 				"fun",
 				"functionHandle"
 			],
 			[
 				"arra",
 				"arrayDifference"
-			],
-			[
-				"type",
-				"typeObject"
-			],
-			[
-				"phot",
-				"photoList"
-			],
-			[
-				"photo",
-				"photoUrl"
-			],
-			[
-				"pho",
-				"photoUrl"
 			],
 			[
 				"count",
@@ -300,10 +336,6 @@
 				"if	If Condition"
 			],
 			[
-				"sele",
-				"selected_instrument"
-			],
-			[
 				"abbre",
 				"abbreviation"
 			],
@@ -482,38 +514,6 @@
 			[
 				"gz",
 				"gzdecode"
-			],
-			[
-				"dpe",
-				"dependencyList"
-			],
-			[
-				"ma",
-				"maxWidth"
-			],
-			[
-				"footer",
-				"footerList"
-			],
-			[
-				"foo",
-				"footerList"
-			],
-			[
-				"place",
-				"placeholderName"
-			],
-			[
-				"date_d",
-				"date_default_timezone_set"
-			],
-			[
-				"var",
-				"var_dump"
-			],
-			[
-				"subTe",
-				"subTemplateList"
 			]
 		]
 	},
@@ -523,7 +523,7 @@
 			"file": "/W/dynamic-flickr-photowall/app.html",
 			"settings":
 			{
-				"buffer_size": 3637,
+				"buffer_size": 4597,
 				"line_ending": "Windows"
 			}
 		},
@@ -539,7 +539,7 @@
 			"file": "/W/dynamic-flickr-photowall/javascripts/nexocentric.photowall.js",
 			"settings":
 			{
-				"buffer_size": 15091,
+				"buffer_size": 19975,
 				"line_ending": "Windows"
 			}
 		},
@@ -971,6 +971,44 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"one",
+			"class=\"",
+			"-overlay\" clas",
+			"-overlay\"",
+			"=\"10\"",
+			"<div id=\"frame",
+			"overlay\"><img",
+			"<div id=\"frame",
+			"[0-9]{1,2}.",
+			".",
+			"sq",
+			",",
+			"sq",
+			"f(",
+			"f('o')",
+			"photo",
+			"rl_m",
+			"width",
+			"url_sq",
+			"sq",
+			"url_sq",
+			"&& selecte",
+			"urlNotFound",
+			"&& calculatePhotoO",
+			"SELECTED_PHOTO_SIZES",
+			"var",
+			"determinePhoto",
+			"sq",
+			"&& selectedPhotoSizes",
+			"findLinkForLargestPhotoSize",
+			"full-width",
+			"photo-frame",
+			"e vertical-align-element",
+			"frame",
+			"typeof photoObject.url",
+			"if (",
+			"url_",
+			",",
 			"getMaxFromFlickr",
 			"pollingInterval",
 			"'.photo'",
@@ -1060,45 +1098,7 @@
 			"8600406238",
 			"10",
 			"1",
-			"8600406238",
-			"10",
-			"8600406238",
-			"parseNewestPhotoList",
-			"functionHandle",
-			"startPoll",
-			"exists",
-			"<span>",
-			"each",
-			"photoFrameId",
-			"||",
-			"!",
-			"[",
-			"ph",
-			"if (ph",
-			"<div",
-			"../",
-			"foundation/",
-			"deleteImage",
-			"timestampAttriute",
-			"'data-upload-timestamp'",
-			"alreadyDisplayed",
-			"filterPhotosForDisplay",
-			"||",
-			" (photoList[photoIndex].url_",
-			"getNewestFlickrTimestamps",
-			"addImage",
-			"compareNewestPhotoListToPhotoWall",
-			"newest-photos-wall",
-			" i",
-			"i ",
-			"var",
-			"):",
-			":",
-			"string_to_format",
-			"colorize_background",
-			"print(\"\", \"\")",
-			"def ",
-			"instrument_options"
+			"8600406238"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1119,7 +1119,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -1127,15 +1127,15 @@
 					"file": "/W/dynamic-flickr-photowall/app.html",
 					"settings":
 					{
-						"buffer_size": 3637,
+						"buffer_size": 4597,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								467,
-								433
+								1381,
+								1381
 							]
 						],
 						"settings":
@@ -1234,7 +1234,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 399.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1251,8 +1251,8 @@
 						"selection":
 						[
 							[
-								685,
-								685
+								780,
+								780
 							]
 						],
 						"settings":
@@ -1361,15 +1361,15 @@
 					"file": "/W/dynamic-flickr-photowall/javascripts/nexocentric.photowall.js",
 					"settings":
 					{
-						"buffer_size": 15091,
+						"buffer_size": 19975,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								14425,
-								14425
+								1252,
+								1252
 							]
 						],
 						"settings":
@@ -1469,7 +1469,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 429.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1486,8 +1486,8 @@
 						"selection":
 						[
 							[
-								11039,
-								11039
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1586,7 +1586,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 4149.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

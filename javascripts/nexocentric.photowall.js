@@ -11,7 +11,7 @@ var displayPhotos = "";
 var maxDisplayNumber = 15;
 var emptyPhotoFrameSelector = '.photo-frame > span';
 var filledPhotoFrameSelector = '.photo-frame > img';
-var photoSelector = '.photo';
+var photoSelector = 'img.photo';
 var getMaxFromFlickr = maxDisplayNumber;
 var flickrPollingInterval = 5000;
 var pollFlickrServerFunctionTimeoutHandle = null;
@@ -26,7 +26,7 @@ var SELECTED_PORTRAIT_PHOTO_SIZES = ['m', 'q'];
 var SELECTED_PHOTO_SIZES = SELECTED_LANDSCAPE_PHOTO_SIZES.concat(SELECTED_PORTRAIT_PHOTO_SIZES);
 var FLICKR_USER_ID_FOR_SEARCH = '42488861@N06';
 
-//---------------------------------------------------------
+//==========================================================
 // [author]
 // Dodzi Y. Dzakuma
 // [summary]
@@ -38,14 +38,15 @@ var FLICKR_USER_ID_FOR_SEARCH = '42488861@N06';
 // 3) the JQuery object to replace by the photo
 // [return]
 // none
-//---------------------------------------------------------
+//==========================================================
 function addPhoto(imagePath, uploadTimestamp, jqueryObject, photoWidth, photoHeight) {
 	//--------------------------------------
 	// load the photo from its url and
 	// add it to the photowall when loaded
 	//--------------------------------------
+	var frameClass = Math.floor(Math.random() * (4 - 1 + 1)) + 1;
 	var tooltip = $('<span data-tooltip aria-haspopup="true" class="has-tip" data-options="show_on:large" title="Large Screen Sizes"></span>');
-	var img = $('<img class="photo" width="100%" data-width="' + photoWidth + '" data-height="' + photoHeight + '" alt="SOMETHING!">').attr('src', imagePath).attr(timestampAttribute, uploadTimestamp).load(function() {
+	var img = $('<img class="photo frame-style-' + frameClass + '" width="100%" data-width="' + photoWidth + '" data-height="' + photoHeight + '" alt="SOMETHING!">').attr('src', imagePath).attr(timestampAttribute, uploadTimestamp).load(function() {
 		if (!this.complete || typeof this.naturalWidth == "undefined" || this.naturalWidth == 0) {
 			console.log('Image does not exist.');
 		} else {
@@ -54,7 +55,7 @@ function addPhoto(imagePath, uploadTimestamp, jqueryObject, photoWidth, photoHei
 	});
 }
 
-//---------------------------------------------------------
+//==========================================================
 // [author]
 // Dodzi Y. Dzakuma
 // [summary]
@@ -64,13 +65,13 @@ function addPhoto(imagePath, uploadTimestamp, jqueryObject, photoWidth, photoHei
 // 1) the timestamp to search for
 // [return]
 // none
-//---------------------------------------------------------
+//==========================================================
 function deletePhoto(timestamp) {
 	$('img[' + timestampAttribute + '="' + timestamp + '"]').replaceWith('<span>&nbsp;</span>');
 	console.log('DELETE THIS TIMESTAMP ONLY:[' + timestamp + ']');
 }
 
-//---------------------------------------------------------
+//==========================================================
 // [author]
 // Dodzi Y. Dzakuma
 // [summary]
@@ -83,7 +84,7 @@ function deletePhoto(timestamp) {
 // [return]
 // 1) an array on success
 // 2) false on parameter error
-//---------------------------------------------------------
+//==========================================================
 function fetchTimestampsFromFlickrList(photoList, selectedPhotoSizes, maxPhotoCount) {
 	//--------------------------------------
 	// declarations
@@ -124,7 +125,7 @@ function fetchTimestampsFromFlickrList(photoList, selectedPhotoSizes, maxPhotoCo
 	return timestampList.slice(0, maxPhotoCount);
 }
 
-//---------------------------------------------------------
+//==========================================================
 // [author]
 // Dodzi Y. Dzakuma
 // [summary]
@@ -134,7 +135,7 @@ function fetchTimestampsFromFlickrList(photoList, selectedPhotoSizes, maxPhotoCo
 // none
 // [return]
 // 1) a list of timestamps of photos on the photowall
-//---------------------------------------------------------
+//==========================================================
 function fetchTimestampsFromPhotowall() {
 	var timestampList = new Array();
 
@@ -145,7 +146,7 @@ function fetchTimestampsFromPhotowall() {
 	return timestampList;
 }
 
-//---------------------------------------------------------
+//==========================================================
 // [author]
 // Jonas Raoni Soares Silva
 // [summary]
@@ -154,13 +155,13 @@ function fetchTimestampsFromPhotowall() {
 // 1) an array to shuffle
 // [return]
 // 1) a shuffled
-//---------------------------------------------------------
+//==========================================================
 function shuffleArray(o) { //v1.0
 	for(var j, x, i = o.length; i; j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
 	return o;
 }
 
-//---------------------------------------------------------
+//==========================================================
 // [author]
 // Dodzi Y. Dzakuma
 // [summary]
@@ -170,12 +171,12 @@ function shuffleArray(o) { //v1.0
 // [return]
 // 1) a list of jquery objects that represent empty
 //    photo frames
-//---------------------------------------------------------
+//==========================================================
 function selectEmptyPhotoFrames() {
 	return $(emptyPhotoFrameSelector);
 }
 
-//---------------------------------------------------------
+//==========================================================
 // [author]
 // Dodzi Y. Dzakuma
 // [summary]
@@ -186,7 +187,7 @@ function selectEmptyPhotoFrames() {
 // [return]
 // 1) a count of full or empty frames depending on the
 //    parameter passed to the function
-//---------------------------------------------------------
+//==========================================================
 function countPhotoFrames(countEmptyFrames) {
 	//--------------------------------------
 	// optional parameter handling
@@ -211,7 +212,7 @@ function countPhotoFrames(countEmptyFrames) {
 
 }
 
-//---------------------------------------------------------
+//==========================================================
 // [author]
 // Dodzi Y. Dzakuma
 // [summary]
@@ -222,7 +223,7 @@ function countPhotoFrames(countEmptyFrames) {
 // [return]
 // 1) a JSON object with the width and height of the photo
 //    (selectable via object.width & object.height)
-//---------------------------------------------------------
+//==========================================================
 function getPhotoDimensions(photoObject, photoUrl) {
 	//--------------------------------------
 	// initializations
@@ -268,7 +269,7 @@ function getPhotoDimensions(photoObject, photoUrl) {
 	};
 }
 
-//---------------------------------------------------------
+//==========================================================
 // [author]
 // Dodzi Y. Dzakuma
 // [summary]
@@ -280,7 +281,7 @@ function getPhotoDimensions(photoObject, photoUrl) {
 //    used for display
 // [return]
 // 1) a string representing the orientation
-//---------------------------------------------------------
+//==========================================================
 function calculatePhotoOrientation(photoObject, selectedPhotoSizes) {
 	//--------------------------------------
 	// initializations
@@ -299,7 +300,7 @@ function calculatePhotoOrientation(photoObject, selectedPhotoSizes) {
 	return 'square';
 }
 
-//---------------------------------------------------------
+//==========================================================
 // [author]
 // Dodzi Y. Dzakuma
 // [summary]
@@ -311,7 +312,7 @@ function calculatePhotoOrientation(photoObject, selectedPhotoSizes) {
 // [return]
 // 1) the url of the picture if found
 // 2) blank if the specified url doesn't exist
-//---------------------------------------------------------
+//==========================================================
 function findLinkForLargestPhotoSize(photoObject, selectedPhotoSizes) {
 	//--------------------------------------
 	// try and get url for photo from 
@@ -359,7 +360,7 @@ function findLinkForLargestPhotoSize(photoObject, selectedPhotoSizes) {
 	return photoUrl;
 }
 
-//---------------------------------------------------------
+//==========================================================
 // [author]
 // Dodzi Y. Dzakuma
 // [summary]
@@ -370,12 +371,12 @@ function findLinkForLargestPhotoSize(photoObject, selectedPhotoSizes) {
 // 2) array to compare against
 // [return]
 // 1) an array with the difference of the two arrays
-//---------------------------------------------------------
+//==========================================================
 function arrayDifference(array1, array2) {
 	return $(array1).not(array2).get();
 }
 
-//---------------------------------------------------------
+//==========================================================
 // [author]
 // Dodzi Y. Dzakuma
 // [summary]
@@ -387,7 +388,7 @@ function arrayDifference(array1, array2) {
 // 1) true on successful parse
 // 2) an empty array if there are no new picures to display
 //    and the wall is full
-//---------------------------------------------------------
+//==========================================================
 function parseFlickrPhotoList(json) {
 	//--------------------------------------
 	// safety check
@@ -503,7 +504,7 @@ function parseFlickrPhotoList(json) {
 	
 // }
 
-//---------------------------------------------------------
+//==========================================================
 // [author]
 // Dodzi Y. Dzakuma
 // [summary]
@@ -518,7 +519,7 @@ function parseFlickrPhotoList(json) {
 // 1) the id handle for the timeout on successful que
 // 2) true if the timeout has been cancelled from the que
 // 3) false on parameter error
-//---------------------------------------------------------
+//==========================================================
 function toggleFunctionTimeout(functionHandle, waitInterval) {
 	//--------------------------------------
 	// safety check
@@ -552,7 +553,7 @@ function toggleFunctionTimeout(functionHandle, waitInterval) {
 	return true;
 }
 
-//---------------------------------------------------------
+//==========================================================
 // [author]
 // Dodzi Y. Dzakuma
 // [summary]
@@ -562,7 +563,7 @@ function toggleFunctionTimeout(functionHandle, waitInterval) {
 // none
 // [return]
 // none
-//---------------------------------------------------------
+//==========================================================
 function pollFlickrServer() {
 	//----------------------------------
 	// make the AJAX call and wait
@@ -588,3 +589,8 @@ function pollFlickrServer() {
 		timeout: ajaxTimeout
 	});
 }
+
+//---------------------------------------------------------
+// run the main program
+//---------------------------------------------------------
+window.onload = pollFlickrServer;

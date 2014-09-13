@@ -9,6 +9,10 @@
 		<script type="text/javascript" src="javascripts/modernizr.js"></script>
 		<script type="text/javascript" src="javascripts/nexocentric.photowall.js"></script>
 		<style type="text/css">
+			body {
+				background-color: #56a0d3;
+			}
+
 			.row.three-quarters-width {
 				width: 75%;
 				margin-left: auto;
@@ -21,17 +25,44 @@
 				top: 50%;
 				transform: translateY(-50%);
 			}
+
+			.frame-style-1 {
+  				border-style: solid;
+  				border-width: 14px 13px 13px;
+  				border-image: url(images/photo-overlay-1.svg) 14 13 13 stretch;
+			}
+
+			.frame-style-2 {
+  				border-style: solid;
+  				border-width: 14px 13px 13px;
+  				border-image: url(images/photo-overlay-2.svg) 14 13 13 stretch;
+			}
+
+			.frame-style-3 {
+  				border-style: solid;
+  				border-width: 14px 13px 13px;
+  				border-image: url(images/photo-overlay-3.svg) 14 13 13 stretch;
+			}
+
+			.frame-style-4 {
+  				border-style: solid;
+  				border-width: 14px 13px 13px;
+  				border-image: url(images/photo-overlay-4.svg) 14 13 13 stretch;
+			}
+
 		</style>
 	</head>
 	<body>
-		<p><span data-tooltip aria-haspopup="true" class="has-tip" data-options="show_on:large" title="Large Screen Sizes">Simple Page With Javascript</span></p>
-
-		<button onclick="pollFlickrServer();">
-			Hello
-		</button>
+		<div class="row">
+			<div class="small-12 columns">
+				<h1 class="text-center">Minako and Dodzi's Wedding</h1>
+				<p><h1>&nbsp;</h1></p>
+				<p><h1>&nbsp;</h1></p>
+			</div>
+		</div>
 
 		<div class="row three-quarters-width">
-			<div class="twelve columns">
+			<div class="small-12 columns">
 				<ul id="dynamic-photo-wall" class="small-block-grid-3 medium-block-grid-4 large-block-grid-5">
 					<li>
 						<div id="frame1" class="photo-frame vertical-align-element"><span>&nbsp;</span></div>
