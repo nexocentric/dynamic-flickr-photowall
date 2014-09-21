@@ -8,7 +8,7 @@ var ajaxRequest = null;
 var ajaxTimeout = 300000;
 var flickrOptions = "";
 var displayPhotos = "";
-var maxDisplayNumber = 15;
+var maxDisplayNumber = 6;
 var emptyPhotoFrameSelector = '.photo-frame > span';
 var filledPhotoFrameSelector = '.photo-frame > img';
 var photoSelector = 'img.photo';
@@ -22,7 +22,7 @@ var typeObject = 'object';
 var INDEX_NOT_FOUND = -1;
 var FLICKR_PHOTO_SIZE_SUFFIXES = ['o', 'l', 'b', 'c', 'z', 'n', 'm', 'q', 's', 't', 'sq'];
 var SELECTED_LANDSCAPE_PHOTO_SIZES = ['b', 'c', 'z'];
-var SELECTED_PORTRAIT_PHOTO_SIZES = ['m', 'q'];
+var SELECTED_PORTRAIT_PHOTO_SIZES = ['n', 'm'];
 var SELECTED_PHOTO_SIZES = SELECTED_LANDSCAPE_PHOTO_SIZES.concat(SELECTED_PORTRAIT_PHOTO_SIZES);
 var FLICKR_USER_ID_FOR_SEARCH = '42488861@N06';
 
@@ -46,13 +46,24 @@ function addPhoto(imagePath, uploadTimestamp, jqueryObject, photoWidth, photoHei
 	//--------------------------------------
 	var frameClass = Math.floor(Math.random() * (4 - 1 + 1)) + 1;
 	var tooltip = $('<span data-tooltip aria-haspopup="true" class="has-tip" data-options="show_on:large" title="Large Screen Sizes"></span>');
-	var img = $('<img class="photo frame-style-' + frameClass + '" width="100%" data-width="' + photoWidth + '" data-height="' + photoHeight + '" alt="SOMETHING!">').attr('src', imagePath).attr(timestampAttribute, uploadTimestamp).load(function() {
+
+	if (photoWidth > photoHeight) {
+		var img = $('<img class="photo frame-style-' + frameClass + '" width="100%" data-width="' + photoWidth + '" data-height="' + photoHeight + '" alt="SOMETHING!">').attr('src', imagePath).attr(timestampAttribute, uploadTimestamp).load(function() {
+			if (!this.complete || typeof this.naturalWidth == "undefined" || this.naturalWidth == 0) {
+				console.log('Image does not exist.');
+			} else {
+				$(jqueryObject).first().replaceWith(img);
+			}
+		});
+	} else {
+		var img = $('<img class="photo frame-style-' + frameClass + '" width="60%" data-width="' + photoWidth + '" data-height="' + photoHeight + '" alt="SOMETHING!">').attr('src', imagePath).attr(timestampAttribute, uploadTimestamp).load(function() {
 		if (!this.complete || typeof this.naturalWidth == "undefined" || this.naturalWidth == 0) {
-			console.log('Image does not exist.');
-		} else {
-			$(jqueryObject).first().replaceWith(img);
-		}
-	});
+				console.log('Image does not exist.');
+			} else {
+				$(jqueryObject).first().replaceWith(img);
+			}
+		});
+	}
 }
 
 //==========================================================
@@ -255,7 +266,7 @@ function getPhotoDimensions(photoObject, photoUrl) {
 		//--------------------------------------
 		if (photoUrl.indexOf(photoSizeSearchSuffix) > INDEX_NOT_FOUND) {
 			widthProperty = 'width_' + photoSizeDesignator;
-			heightProperty = 'height_' * photoSizeDesignator;
+			heightProperty = 'height_' + photoSizeDesignator;
 			photoWidth = photoObject[widthProperty];
 			photoHeight = photoObject[heightProperty];
 			break;
@@ -493,7 +504,7 @@ function parseFlickrPhotoList(json) {
 			photoUploadDate, 
 			emptyPhotoFramesJqueryObject[photoIndex],
 			photoDimensions.width,
-			photoDimensions.height	
+			photoDimensions.height
 		);
 	}
 	return true;

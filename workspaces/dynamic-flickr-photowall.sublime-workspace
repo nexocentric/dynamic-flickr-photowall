@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"ba",
+				"background-color"
+			],
+			[
 				"photo",
 				"photo-overlay"
 			],
@@ -510,10 +514,6 @@
 			[
 				"moni",
 				"monitorList"
-			],
-			[
-				"gz",
-				"gzdecode"
 			]
 		]
 	},
@@ -523,7 +523,23 @@
 			"file": "/W/dynamic-flickr-photowall/app.html",
 			"settings":
 			{
-				"buffer_size": 4597,
+				"buffer_size": 5174,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/W/balinese-spa-frangipani/scss/nexocentric-studios/_colors-by-name.scss",
+			"settings":
+			{
+				"buffer_size": 54704,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "$carolina-blue: #56a0d3;\n$cerulean-blue: #2a52be;\n$cerulean-frost: #6d9bc3\n$cg-blue: #007aa5;",
+			"settings":
+			{
+				"buffer_size": 93,
 				"line_ending": "Windows"
 			}
 		},
@@ -539,7 +555,7 @@
 			"file": "/W/dynamic-flickr-photowall/javascripts/nexocentric.photowall.js",
 			"settings":
 			{
-				"buffer_size": 19975,
+				"buffer_size": 20279,
 				"line_ending": "Windows"
 			}
 		},
@@ -824,8 +840,10 @@
 	},
 	"file_history":
 	[
-		"/C/Dropbox/flickr-wedding-app/app.html",
+		"/C/Dropbox/shared_folders/minako-and-dodzi/wedding-playlist/注意事項.txt",
+		"/C/Windows/System32/drivers/etc/hosts",
 		"/W/balinese-spa-frangipani/stylesheets/site.css",
+		"/C/Dropbox/flickr-wedding-app/app.html",
 		"/C/cygwin64/development/silver-studded-blue/bash-colorization-tools.sh",
 		"/C/Dropbox/portable/applications/sublime/windows-64/Data/Packages/Emmet/Default (Windows).sublime-keymap",
 		"/W/hashmap.py",
@@ -861,7 +879,6 @@
 		"/W/vb-external-instrumentation/tests/test_main.py",
 		"/W/vb-external-instrumentation/main.py",
 		"/W/python-tutorial-file.txt",
-		"/C/Windows/System32/drivers/etc/hosts",
 		"/C/Dropbox/portable/applications/rainmeter/Skins/first/nex-first-skin.ini",
 		"/C/cygwin64/development/test-bash-script.sh",
 		"/C/Users/nexocentric/Desktop/sample.txt",
@@ -950,8 +967,7 @@
 		"/W/balinese-spa-frangipani/development-workspace/balinese-spa-frangipani.sublime-project",
 		"/W/balinese-spa-frangipani/templates/stock/logo.tmpl",
 		"/W/balinese-spa-frangipani/javascripts/nexocentric-studios/nexocentric-studios.js",
-		"/W/balinese-spa-frangipani/templates/development-boilerplate.tmpl",
-		"/W/balinese-spa-frangipani/templates/development-template.tmpl"
+		"/W/balinese-spa-frangipani/templates/development-boilerplate.tmpl"
 	],
 	"find":
 	{
@@ -971,6 +987,82 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			".",
+			".................................",
+			"................................",
+			"...............................",
+			"..............................",
+			".............................",
+			"............................",
+			"...........................",
+			"..........................",
+			".........................",
+			"........................",
+			".......................",
+			"......................",
+			".....................",
+			"....................",
+			"...................",
+			"..................",
+			".................",
+			"................",
+			"...............",
+			"..............",
+			".............",
+			"............",
+			"...........",
+			"..........",
+			".........",
+			"........",
+			".......",
+			"......",
+			".....",
+			"....",
+			"...",
+			"..",
+			".................................",
+			"................................",
+			"...............................",
+			"..............................",
+			".............................",
+			"............................",
+			"...........................",
+			"..........................",
+			".........................",
+			"........................",
+			".......................",
+			"......................",
+			".....................",
+			"....................",
+			"...................",
+			"..................",
+			".................",
+			"................",
+			"...............",
+			"..............",
+			".............",
+			"............",
+			"...........",
+			"..........",
+			".........",
+			"........",
+			".......",
+			"......",
+			".....",
+			"....",
+			"...",
+			".",
+			"---------------------------------------------------------",
+			"photoSelector",
+			".photo",
+			"overlay-1",
+			";",
+			"rlay-1.s",
+			"photo-overlay",
+			"overlay-1.svg",
+			"photo-overlay-1",
+			"/files/4127/border.png",
+			"border-image",
 			"one",
 			"class=\"",
 			"-overlay\" clas",
@@ -1022,83 +1114,7 @@
 			"fetchTimestampsFromFlickrList",
 			"fetchTimestampsFromPhotowall",
 			"filterPhotosForDisplay",
-			"deleteList",
-			").not(",
-			"diff",
-			"=",
-			"displayList = newestFlickrPhotosTimestamps.diff(photoWallTimestamps);\n	deleteList = photoWallTimestamps.diff(newestFlickrPhotosTimestamps);",
-			"getUploadTimestampsFromPhotoWall",
-			"QUnit.test(\"findLinkForLargestPhotoSize function\", function(assert) {\n	var returnValue = findLinkForLargestPhotoSize(samplePhotoList1.photos.photo[0], []);\n	assert.deepEqual(returnValue, '', 'returns empty string when size list not defined');\n\n	returnValue = findLinkForLargestPhotoSize(samplePhotoList1.photos.photo[0], ['fff', 'xxx']);\n	assert.deepEqual(returnValue, '', 'returns empty string when url not not found');\n\n	returnValue = findLinkForLargestPhotoSize(samplePhotoList1.photos.photo[1], ['x', 'y', 'b', 'c']);\n	assert.ok(returnValue != '', 'returns url when found');\n});",
-			"getNewestFlickrTimestamps",
-			"(photoObject",
-			"photoObject",
-			"break;",
-			"typeof",
-			"typeof ",
-			"selectedPhotoSizes.indexOf(photoSize)",
-			"photoUrl = ",
-			"Of(",
-			"i",
-			"' in",
-			"\", \"",
-			", \"",
-			" \"i",
-			" \"I",
-			" \"i",
-			" \"I",
-			" \"i",
-			" \"I",
-			" \"i",
-			" \"I",
-			" \"i",
-			" \"I",
-			" \"i",
-			" \"I",
-			" \"i",
-			" \"I",
-			" \"i",
-			" \"I",
-			" \"i",
-			" \"I",
-			" \"i",
-			" \"I",
-			" \"i",
-			" \"I",
-			" \"i",
-			" \"I",
-			" \"i",
-			", \"l",
-			" \"da",
-			", \"is",
-			", \"t",
-			", \"se",
-			"{ \"id\":",
-			", \"o",
-			"SELECTED_PHOTO_SIZES",
-			"selectedPhotoSizes",
-			"typeUndefined",
-			"photoList[photoIndex]",
-			" else if (typeof photoList[photoIndex].url_t !== typeUndefined) {\n		photoUrl = photoList[photoIndex].url_t;\n	}",
-			"typeof ",
-			"(photoList[photoIndex].url",
-			"frameType",
-			"emptyPhotoFrames",
-			"photosDisplayed",
-			"availablePhotoFrames",
-			"photosDisplayedOnPhotowall",
-			"countPhotoFrames",
-			"getFrameCount",
-			"<span>&nbsp;</span>",
-			"countEmptyFramesOnly",
-			"countEmptyFrames",
-			"emptyStatus",
-			"photosDisplayed",
-			"toggleTimeout",
-			"toogleTimeout",
-			"8600406238",
-			"10",
-			"1",
-			"8600406238"
+			"deleteList"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1119,7 +1135,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -1127,15 +1143,15 @@
 					"file": "/W/dynamic-flickr-photowall/app.html",
 					"settings":
 					{
-						"buffer_size": 4597,
+						"buffer_size": 5174,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1381,
-								1381
+								1567,
+								1567
 							]
 						],
 						"settings":
@@ -1234,13 +1250,244 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 399.0,
+						"translation.y": 234.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
+					"file": "/W/balinese-spa-frangipani/scss/nexocentric-studios/_colors-by-name.scss",
+					"settings":
+					{
+						"buffer_size": 54704,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4175,
+								4157
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+								"php": "%DROPBOX_ROOT%/portable/applications/php/php.exe"
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1872.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"settings":
+					{
+						"buffer_size": 93,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								42,
+								42
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+								"php": "%DROPBOX_ROOT%/portable/applications/php/php.exe"
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
 					"file": "/W/dynamic-flickr-photowall/tests/nexocentric.photowall-test.html",
 					"settings":
 					{
@@ -1251,8 +1498,8 @@
 						"selection":
 						[
 							[
-								780,
-								780
+								1024,
+								1024
 							]
 						],
 						"settings":
@@ -1357,19 +1604,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 4,
 					"file": "/W/dynamic-flickr-photowall/javascripts/nexocentric.photowall.js",
 					"settings":
 					{
-						"buffer_size": 19975,
+						"buffer_size": 20279,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1252,
-								1252
+								20279,
+								20279
 							]
 						],
 						"settings":
@@ -1469,13 +1716,13 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 6941.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 5,
 					"file": "/W/dynamic-flickr-photowall/tests/nexocentric.photowall-test.js",
 					"settings":
 					{
@@ -1486,8 +1733,8 @@
 						"selection":
 						[
 							[
-								0,
-								0
+								563,
+								563
 							]
 						],
 						"settings":
