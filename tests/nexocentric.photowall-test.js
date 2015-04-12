@@ -434,6 +434,20 @@ var samplePhotoList2 = {
 	"stat": "ok" 
 };
 
+//==========================================================
+// [author]
+// Dodzi Y. Dzakuma
+// [summary]
+// This is a simiple function used to validate arrays. A
+// function like this is needed because there are a number
+// of conditions that need to be checked before one can be
+// sure that an array is valid for use in JavaScript.
+// [parameters]
+// 1) an array to validate
+// [return]
+// 1) true if the array is safe for use
+// 2) false otherwise
+//==========================================================
 function validateArray(arrayToValidate)
 {
 	if (
@@ -446,7 +460,6 @@ function validateArray(arrayToValidate)
 	}
 	return false;
 }
-
 
 QUnit.test("toggleFunctionTimeout function", function(assert) {
 	var returnValue = toggleFunctionTimeout();
