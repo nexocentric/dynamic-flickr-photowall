@@ -1,7 +1,4 @@
-//&api_key=25b7fb5c323fa75fe2392cea1ee1d902&user_id=42488861%40N06&format=rest&api_sig=209f2d5441959dcf4f75e49a55b6fdb3
 var flickrKey = "76f3106f7634258dce78cd44e03e8b76";
-var flickrSecret = "0e017d4172b1b622";
-var flickrUserId = "42488861@N06";
 var ajaxHandlerPath = 'https://api.flickr.com/services/rest?format=json&jsoncallback=?';
 var timestampAttribute = "data_upload_timestamp";
 var ajaxRequest = null;

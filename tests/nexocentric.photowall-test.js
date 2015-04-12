@@ -454,7 +454,8 @@ QUnit.test("parseFlickrPhotoList function", function(assert) {
 	assert.deepEqual(returnValue, true, 'initializes photowall when no photos loaded');
 
 	returnValue = parseFlickrPhotoList(samplePhotoList1);
-	assert.deepEqual(returnValue.length, 0, 'stops processing if no changes detected between flickr and photowall');	
+	returnValue = (typeof returnValue != "undefined" && returnValue != null && returnValue.length != null && returnValue.length > 0)
+	assert.deepEqual(returnValue, false, 'stops processing if no changes detected between flickr and photowall');	
 });
 
 QUnit.test("countPhotoFrames function", function(assert) {
