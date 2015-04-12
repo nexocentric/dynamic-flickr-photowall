@@ -434,6 +434,19 @@ var samplePhotoList2 = {
 	"stat": "ok" 
 };
 
+function validateArray(arrayToValidate)
+{
+	if (
+		typeof arrayToValidate != "undefined" 
+		&& arrayToValidate != null 
+		&& arrayToValidate.length != null
+		&& arrayToValidate.length > 0
+	) {
+		return true;
+	}
+	return false;
+}
+
 
 QUnit.test("toggleFunctionTimeout function", function(assert) {
 	var returnValue = toggleFunctionTimeout();
@@ -454,7 +467,7 @@ QUnit.test("parseFlickrPhotoList function", function(assert) {
 	assert.deepEqual(returnValue, true, 'initializes photowall when no photos loaded');
 
 	returnValue = parseFlickrPhotoList(samplePhotoList1);
-	returnValue = (typeof returnValue != "undefined" && returnValue != null && returnValue.length != null && returnValue.length > 0)
+	returnValue = validateArray(returnValue);
 	assert.deepEqual(returnValue, false, 'stops processing if no changes detected between flickr and photowall');	
 });
 
